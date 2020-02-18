@@ -198,6 +198,85 @@ main {
 	}
 }
 
+// TOURS page
+
+.tours {
+	.items {
+		width: 1200px;
+		margin: auto;
+		margin-bottom: 150px;
+
+		.item {
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			&.second {
+				margin-top: 100px;
+				.galery {
+					padding-left: 0px;
+					padding-right: 15px;
+				}
+
+				.info {
+					padding-left: 15px;
+					padding-right: 0px;
+				}
+			}
+			.header {
+				width: 100%;
+				flex: 100%;
+				margin-bottom: 30px;
+				display: flex;
+				align-items: center;
+				.title {
+					font-size: 24px;
+					text-transform: uppercase;
+					font-weight: bold;
+					position: relative;
+				}
+
+				.controls {
+					margin-left: 15px;
+				}
+			}
+			.info {
+				width: 50%;
+				padding-right: 15px;
+				font-size: 16px;
+				box-sizing: border-box;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 19px;
+				letter-spacing: 0.05em;
+				position: relative;
+				.btn {
+					position: absolute;
+					bottom: 0px;
+					left:15px;;
+					width: 100%;
+					font-size: 20px;
+				}
+			}
+			.galery {
+				width: 50%;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				box-sizing: border-box;
+				padding-left: 15px;
+				.full-size {
+					width: 100%;
+					
+				}
+				.small-size {
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
 
 //UI buttons style
 .btn {

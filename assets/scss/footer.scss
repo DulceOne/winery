@@ -2,11 +2,12 @@ footer {
 	width: 100%;
 	background-color: black;
 	.wrapper {
-		width: 780px;
+		width: 1200px;
 		margin: auto;
 		display: flex;
 		color: white;
-		padding: 60px 0px;
+		padding: 60px 0 60px 115px;
+		box-sizing: border-box;
 		.contacts {
 			width: 485px;
 			border-right: 2px solid white;

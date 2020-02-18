@@ -5,12 +5,12 @@
             <div class="bottom">EastCoastsWinerys</div>
         </div>
         <nav>
-            <a href="">home</a>
-            <a href="">about us</a>
+            <a href="index.php">home</a>
+            <a class="scollTo" href="#about">about us</a>
             <a href="">fleet</a>
-            <a href="">wine tour</a>
+            <a href="tours.php">wine tour</a>
             <a href="">configurator</a>
-            <a href="">contact</a>
+            <a class="scollTo" href="index.php#contact">contact</a>
         </nav>
     </div>
 </header>

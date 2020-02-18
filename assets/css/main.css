@@ -223,7 +223,91 @@ main .contacts .wrapper .info .soc {
   margin-top: 15px;
 }
 
-/* line 203, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
+.tours .items {
+  width: 1200px;
+  margin: auto;
+  margin-bottom: 150px;
+}
+/* line 209, ../scss/main.scss */
+.tours .items .item {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 213, ../scss/main.scss */
+.tours .items .item.second {
+  margin-top: 100px;
+}
+/* line 215, ../scss/main.scss */
+.tours .items .item.second .galery {
+  padding-left: 0px;
+  padding-right: 15px;
+}
+/* line 220, ../scss/main.scss */
+.tours .items .item.second .info {
+  padding-left: 15px;
+  padding-right: 0px;
+}
+/* line 225, ../scss/main.scss */
+.tours .items .item .header {
+  width: 100%;
+  flex: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+/* line 231, ../scss/main.scss */
+.tours .items .item .header .title {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+/* line 238, ../scss/main.scss */
+.tours .items .item .header .controls {
+  margin-left: 15px;
+}
+/* line 242, ../scss/main.scss */
+.tours .items .item .info {
+  width: 50%;
+  padding-right: 15px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  position: relative;
+}
+/* line 253, ../scss/main.scss */
+.tours .items .item .info .btn {
+  position: absolute;
+  bottom: 0px;
+  left: 15px;
+  width: 100%;
+  font-size: 20px;
+}
+/* line 261, ../scss/main.scss */
+.tours .items .item .galery {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 15px;
+}
+/* line 268, ../scss/main.scss */
+.tours .items .item .galery .full-size {
+  width: 100%;
+}
+/* line 272, ../scss/main.scss */
+.tours .items .item .galery .small-size {
+  margin-top: 30px;
+}
+
+/* line 282, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -234,30 +318,30 @@ main .contacts .wrapper .info .soc {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 213, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 218, ../scss/main.scss */
+/* line 297, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* line 225, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 230, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 234, ../scss/main.scss */
+/* line 313, ../scss/main.scss */
 .ui-line.orange {
   border: 2px solid #FF391E;
 }

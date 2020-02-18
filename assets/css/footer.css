@@ -5,35 +5,36 @@ footer {
 }
 /* line 4, ../scss/footer.scss */
 footer .wrapper {
-  width: 780px;
+  width: 1200px;
   margin: auto;
   display: flex;
   color: white;
-  padding: 60px 0px;
+  padding: 60px 0 60px 115px;
+  box-sizing: border-box;
 }
-/* line 10, ../scss/footer.scss */
+/* line 11, ../scss/footer.scss */
 footer .wrapper .contacts {
   width: 485px;
   border-right: 2px solid white;
 }
-/* line 13, ../scss/footer.scss */
+/* line 14, ../scss/footer.scss */
 footer .wrapper .contacts .item {
   font-size: 21px;
   margin-top: 10px;
   letter-spacing: 0.05em;
 }
-/* line 18, ../scss/footer.scss */
+/* line 19, ../scss/footer.scss */
 footer .wrapper .contacts .soc {
   width: 300px;
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
 }
-/* line 26, ../scss/footer.scss */
+/* line 27, ../scss/footer.scss */
 footer .wrapper .menu {
   padding-left: 150px;
 }
-/* line 29, ../scss/footer.scss */
+/* line 30, ../scss/footer.scss */
 footer .wrapper .menu nav a {
   display: block;
   text-decoration: none;
