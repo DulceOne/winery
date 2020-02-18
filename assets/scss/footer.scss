@@ -1,0 +1,40 @@
+footer {
+	width: 100%;
+	background-color: black;
+	.wrapper {
+		width: 780px;
+		margin: auto;
+		display: flex;
+		color: white;
+		padding: 60px 0px;
+		.contacts {
+			width: 485px;
+			border-right: 2px solid white;
+			.item {
+				font-size: 21px;
+				margin-top: 10px;
+				letter-spacing: 0.05em;
+			}
+			.soc {
+				width: 300px;
+				display: flex;
+				justify-content: space-between;
+				margin-top: 15px;
+			}
+		}
+
+		.menu {
+			padding-left: 150px;
+			nav {
+				a {
+					display: block;
+					text-decoration: none;
+					color: white;
+					font-size: 18px;
+					text-transform: uppercase;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+}

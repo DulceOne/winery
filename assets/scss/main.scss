@@ -1,0 +1,237 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: white;
+	font-family: roboto;
+}
+
+main {
+	.slide-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		align-items: center;
+		position: relative;
+		.slide {
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 600px;
+			width: 100%;
+			display: none;
+			&:nth-child(1) {
+				background-image: url('../image/home/slider_1.png');
+			}
+			&:nth-child(2) {
+				background-image: url('../image/home/slider_2.png');
+			}
+			&:nth-child(3) {
+				background-image: url('../image/home/slider_3.png');
+			}
+			&:nth-child(4) {
+				background-image: url('../image/home/slider_1.png');
+			}
+			&:nth-child(5) {
+				background-image: url('../image/home/slider_2.png');
+			}
+			&:nth-child(6) {
+				background-image: url('../image/home/slider_3.png');
+			}
+			&:nth-child(7) {
+				background-image: url('../image/home/slider_1.png');
+			}
+			&:nth-child(8) {
+				background-image: url('../image/home/slider_2.png');
+			}
+		}
+		button {
+			width: 570px;
+			font-size: 20px;
+			line-height: 23px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			position: absolute;
+			bottom: 150px;
+		}
+	}
+
+	.informations {
+		margin-top: 150px;
+		width: 100%;
+		.items {
+			width: 1200px;
+			margin: auto;
+
+			.item {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				&.second {
+					margin-top: 150px;
+					.galery {
+						padding-left: 0px;
+						padding-right: 15px;
+					}
+
+					.info {
+						padding-left: 15px;
+						padding-right: 0px;
+					}
+				}
+				.header {
+					width: 100%;
+					flex: 100%;
+					margin-bottom: 30px;
+					display: flex;
+					align-items: center;
+					.title {
+						font-size: 24px;
+						text-transform: uppercase;
+						font-weight: bold;
+						position: relative;
+					}
+
+					.controls {
+						margin-left: 15px;
+					}
+				}
+				.info {
+					width: 50%;
+					padding-right: 15px;
+					font-size: 16px;
+					box-sizing: border-box;
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					line-height: 19px;
+					letter-spacing: 0.05em;
+					position: relative;
+					.btn {
+						position: absolute;
+						bottom: 0px;
+						left:15px;;
+						width: 100%;
+						font-size: 20px;
+					}
+				}
+				.galery {
+					width: 50%;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					box-sizing: border-box;
+					padding-left: 15px;
+					.full-size {
+						width: 100%;
+					}
+					.small-size {
+						margin-top: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	.contacts {
+		width: 100%;
+		margin-top: 150px;
+		height: 577px;
+		background-image: url('../image/home/bg_contacts.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 100px 0px 150px 0px;
+		box-sizing: border-box;
+		.wrapper {
+			width: 1200px;
+			margin: auto;
+			display: flex;
+			color: white;
+			align-items: center;
+			.form-wrap {
+				.title {
+					position: relative;
+					font-size: 24px;
+					text-transform: uppercase;
+				}
+				form {
+					width: 585px;
+					border-right: 2px solid white;
+					margin-top: 15px;
+	
+					input {
+						background: transparent;
+						width: 500px;
+						border: unset;
+						border-bottom: 2px solid white;
+						font-size: 16px;
+						margin-top: 15px;
+						color: white;
+	
+						&::placeholder {
+							color: #D0D0D0;
+						}
+					}
+					button {
+						width: 500px;
+						margin-top: 15px;
+					}
+				}
+			}
+
+			.info {
+				margin-left: 150px;
+				.item {
+					font-size: 21px;
+					margin-top: 10px;
+					letter-spacing: 0.05em;
+				}
+				.soc {
+					width: 300px;
+					display: flex;
+					justify-content: space-between;
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+//UI buttons style
+.btn {
+	text-align: center;
+	background: #FF391E;
+	border: 2px solid #FF391E;
+	box-sizing: border-box;
+	padding: 10px;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&.light {
+		background: #FFFFFF;
+		color: #FF391E;
+	}
+
+	&.white {
+		background: transparent;
+		color: white;
+		border: 2px solid white;
+	}
+}
+
+.ui-line {
+	position: absolute;
+	bottom: -5px;
+	left: 0px;
+	width: 70px;
+	&.white {
+		border-bottom: 2px solid white;
+	}
+
+	&.orange {
+		border: 2px solid #FF391E;
+	}
+}
