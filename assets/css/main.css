@@ -307,7 +307,50 @@ main .contacts .wrapper .info .soc {
   margin-top: 30px;
 }
 
-/* line 282, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
+.about {
+  width: 1200px;
+  margin: auto;
+  margin-top: 90px;
+}
+/* line 284, ../scss/main.scss */
+.about .header {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+/* line 290, ../scss/main.scss */
+.about .galery {
+  margin-top: 35px;
+}
+/* line 292, ../scss/main.scss */
+.about .galery .full-size {
+  width: 100%;
+}
+/* line 295, ../scss/main.scss */
+.about .galery .wrap {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+/* line 301, ../scss/main.scss */
+.about .info {
+  margin-top: 50px;
+}
+/* line 303, ../scss/main.scss */
+.about .info .title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 308, ../scss/main.scss */
+.about .info .content {
+  margin-top: 15px;
+  margin-bottom: 150px;
+}
+
+/* line 317, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -318,30 +361,30 @@ main .contacts .wrapper .info .soc {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 292, ../scss/main.scss */
+/* line 327, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 297, ../scss/main.scss */
+/* line 332, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* line 304, ../scss/main.scss */
+/* line 339, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 309, ../scss/main.scss */
+/* line 344, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 313, ../scss/main.scss */
+/* line 348, ../scss/main.scss */
 .ui-line.orange {
   border: 2px solid #FF391E;
 }

@@ -267,12 +267,47 @@ main {
 				padding-left: 15px;
 				.full-size {
 					width: 100%;
-					
+
 				}
 				.small-size {
 					margin-top: 30px;
 				}
 			}
+		}
+	}
+}
+
+.about {
+	width: 1200px;
+	margin: auto;
+	margin-top: 90px;
+	.header {
+		font-size: 24px;
+		text-transform: uppercase;
+		font-weight: bold;
+		position: relative;
+	}
+	.galery {
+		margin-top: 35px;
+		.full-size {
+			width: 100%;
+		}
+		.wrap {
+			margin-top: 30px;
+			display: flex;
+			justify-content: space-between;;
+		}
+	}
+	.info {
+		margin-top: 50px;
+		.title {
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.content {
+			margin-top: 15px;
+			margin-bottom: 150px;
 		}
 	}
 }

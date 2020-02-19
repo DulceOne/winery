@@ -43,6 +43,6 @@ header .wrapper nav a {
   transition: all .5s;
 }
 /* line 38, ../scss/header.scss */
-header .wrapper nav a:hover {
+header .wrapper nav a:hover, header .wrapper nav a.active {
   border-bottom: 2px solid #FF391E;
 }

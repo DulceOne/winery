@@ -35,7 +35,7 @@ header {
         color :black;
         border-bottom: 2px solid transparent;
         transition: all .5s;
-        &:hover {
+        &:hover, &.active {
           border-bottom: 2px solid #FF391E;
         }
       }
