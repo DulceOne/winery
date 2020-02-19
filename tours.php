@@ -40,7 +40,7 @@
 		<div class="item second">
 			<div class="header">
 				<div class="title">
-					Wölffer Estate
+					Baiting Hollow Farm Vineyard
 					<div class="ui-line orange"></div>
 				</div>
 			</div>
@@ -62,7 +62,7 @@
 		<div class="item second">
 			<div class="header">
 				<div class="title">
-					Wölffer Estate
+					Channing Daughters Winery
 					<div class="ui-line orange"></div>
 				</div>
 			</div>	
@@ -71,6 +71,7 @@
 				<img class="full-size" src="./assets/image/tours/winery.png" alt="">
 			</div>
 
+			
 			<div class="info">
 				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo numquam soluta eaque laborum nemo ipsam quia itaque in exercitationem sunt nesciunt odio at? Quidem nemo sunt vitae dolores est?
 				Eos ratione nam iusto repellat voluptatum quas eius nemo quidem aspernatur atque, accusamus ipsa dolor, deleniti soluta odit debitis consectetur! Itaque corrupti alias earum ipsum et laborum doloremque est natus!
@@ -84,7 +85,7 @@
 		<div class="item second">
 			<div class="header">
 				<div class="title">
-					Wölffer Estate
+					Martha Clara Vineyards
 					<div class="ui-line orange"></div>
 				</div>
 			</div>
