@@ -11,94 +11,36 @@ body {
 }
 
 /* line 12, ../scss/main.scss */
-main .slide-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-}
-/* line 18, ../scss/main.scss */
-main .slide-section .slide {
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  width: 100%;
-  display: none;
-}
-/* line 24, ../scss/main.scss */
-main .slide-section .slide:nth-child(1) {
-  background-image: url("../image/home/slider_1.png");
-}
-/* line 27, ../scss/main.scss */
-main .slide-section .slide:nth-child(2) {
-  background-image: url("../image/home/slider_2.png");
-}
-/* line 30, ../scss/main.scss */
-main .slide-section .slide:nth-child(3) {
-  background-image: url("../image/home/slider_3.png");
-}
-/* line 33, ../scss/main.scss */
-main .slide-section .slide:nth-child(4) {
-  background-image: url("../image/home/slider_1.png");
-}
-/* line 36, ../scss/main.scss */
-main .slide-section .slide:nth-child(5) {
-  background-image: url("../image/home/slider_2.png");
-}
-/* line 39, ../scss/main.scss */
-main .slide-section .slide:nth-child(6) {
-  background-image: url("../image/home/slider_3.png");
-}
-/* line 42, ../scss/main.scss */
-main .slide-section .slide:nth-child(7) {
-  background-image: url("../image/home/slider_1.png");
-}
-/* line 45, ../scss/main.scss */
-main .slide-section .slide:nth-child(8) {
-  background-image: url("../image/home/slider_2.png");
-}
-/* line 49, ../scss/main.scss */
-main .slide-section button {
-  width: 570px;
-  font-size: 20px;
-  line-height: 23px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 150px;
-}
-/* line 60, ../scss/main.scss */
 main .informations {
   margin-top: 150px;
   width: 100%;
 }
-/* line 63, ../scss/main.scss */
+/* line 15, ../scss/main.scss */
 main .informations .items {
   width: 1200px;
   margin: auto;
 }
-/* line 67, ../scss/main.scss */
+/* line 19, ../scss/main.scss */
 main .informations .items .item {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 71, ../scss/main.scss */
+/* line 23, ../scss/main.scss */
 main .informations .items .item.second {
   margin-top: 150px;
 }
-/* line 73, ../scss/main.scss */
+/* line 25, ../scss/main.scss */
 main .informations .items .item.second .galery {
   padding-left: 0px;
   padding-right: 15px;
 }
-/* line 78, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 main .informations .items .item.second .info {
   padding-left: 15px;
   padding-right: 0px;
 }
-/* line 83, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 main .informations .items .item .header {
   width: 100%;
   flex: 100%;
@@ -106,18 +48,18 @@ main .informations .items .item .header {
   display: flex;
   align-items: center;
 }
-/* line 89, ../scss/main.scss */
+/* line 41, ../scss/main.scss */
 main .informations .items .item .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 96, ../scss/main.scss */
+/* line 48, ../scss/main.scss */
 main .informations .items .item .header .controls {
   margin-left: 15px;
 }
-/* line 100, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 main .informations .items .item .info {
   width: 50%;
   padding-right: 15px;
@@ -130,7 +72,7 @@ main .informations .items .item .info {
   letter-spacing: 0.05em;
   position: relative;
 }
-/* line 111, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 main .informations .items .item .info .btn {
   position: absolute;
   bottom: 0px;
@@ -138,7 +80,7 @@ main .informations .items .item .info .btn {
   width: 100%;
   font-size: 20px;
 }
-/* line 119, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 main .informations .items .item .galery {
   width: 50%;
   display: flex;
@@ -147,15 +89,15 @@ main .informations .items .item .galery {
   box-sizing: border-box;
   padding-left: 15px;
 }
-/* line 126, ../scss/main.scss */
+/* line 78, ../scss/main.scss */
 main .informations .items .item .galery .full-size {
   width: 100%;
 }
-/* line 129, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 main .informations .items .item .galery .small-size {
   margin-top: 30px;
 }
-/* line 137, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 main .contacts {
   width: 100%;
   margin-top: 150px;
@@ -166,7 +108,7 @@ main .contacts {
   padding: 100px 0px 150px 0px;
   box-sizing: border-box;
 }
-/* line 146, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 main .contacts .wrapper {
   width: 1200px;
   margin: auto;
@@ -174,19 +116,19 @@ main .contacts .wrapper {
   color: white;
   align-items: center;
 }
-/* line 153, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 main .contacts .wrapper .form-wrap .title {
   position: relative;
   font-size: 24px;
   text-transform: uppercase;
 }
-/* line 158, ../scss/main.scss */
+/* line 110, ../scss/main.scss */
 main .contacts .wrapper .form-wrap form {
   width: 585px;
   border-right: 2px solid white;
   margin-top: 15px;
 }
-/* line 163, ../scss/main.scss */
+/* line 115, ../scss/main.scss */
 main .contacts .wrapper .form-wrap form input {
   background: transparent;
   width: 500px;
@@ -196,26 +138,26 @@ main .contacts .wrapper .form-wrap form input {
   margin-top: 15px;
   color: white;
 }
-/* line 172, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 main .contacts .wrapper .form-wrap form input::placeholder {
   color: #D0D0D0;
 }
-/* line 176, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 main .contacts .wrapper .form-wrap form button {
   width: 500px;
   margin-top: 15px;
 }
-/* line 183, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 main .contacts .wrapper .info {
   margin-left: 150px;
 }
-/* line 185, ../scss/main.scss */
+/* line 137, ../scss/main.scss */
 main .contacts .wrapper .info .item {
   font-size: 21px;
   margin-top: 10px;
   letter-spacing: 0.05em;
 }
-/* line 190, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 main .contacts .wrapper .info .soc {
   width: 300px;
   display: flex;
@@ -223,33 +165,33 @@ main .contacts .wrapper .info .soc {
   margin-top: 15px;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .tours .items {
   width: 1200px;
   margin: auto;
   margin-bottom: 150px;
 }
-/* line 209, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 .tours .items .item {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 213, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .tours .items .item.second {
   margin-top: 100px;
 }
-/* line 215, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 .tours .items .item.second .galery {
   padding-left: 0px;
   padding-right: 15px;
 }
-/* line 220, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 .tours .items .item.second .info {
   padding-left: 15px;
   padding-right: 0px;
 }
-/* line 225, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .tours .items .item .header {
   width: 100%;
   flex: 100%;
@@ -257,18 +199,18 @@ main .contacts .wrapper .info .soc {
   display: flex;
   align-items: center;
 }
-/* line 231, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 .tours .items .item .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 238, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .tours .items .item .header .controls {
   margin-left: 15px;
 }
-/* line 242, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .tours .items .item .info {
   width: 50%;
   padding-right: 15px;
@@ -281,7 +223,7 @@ main .contacts .wrapper .info .soc {
   letter-spacing: 0.05em;
   position: relative;
 }
-/* line 253, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 .tours .items .item .info .btn {
   position: absolute;
   bottom: 0px;
@@ -289,7 +231,7 @@ main .contacts .wrapper .info .soc {
   width: 100%;
   font-size: 20px;
 }
-/* line 261, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .tours .items .item .galery {
   width: 50%;
   display: flex;
@@ -298,59 +240,59 @@ main .contacts .wrapper .info .soc {
   box-sizing: border-box;
   padding-left: 15px;
 }
-/* line 268, ../scss/main.scss */
+/* line 220, ../scss/main.scss */
 .tours .items .item .galery .full-size {
   width: 100%;
 }
-/* line 272, ../scss/main.scss */
+/* line 224, ../scss/main.scss */
 .tours .items .item .galery .small-size {
   margin-top: 30px;
 }
 
-/* line 280, ../scss/main.scss */
+/* line 232, ../scss/main.scss */
 .about {
   width: 1200px;
   margin: auto;
   margin-top: 90px;
 }
-/* line 284, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 .about .header {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 290, ../scss/main.scss */
+/* line 242, ../scss/main.scss */
 .about .galery {
   margin-top: 35px;
 }
-/* line 292, ../scss/main.scss */
+/* line 244, ../scss/main.scss */
 .about .galery .full-size {
   width: 100%;
 }
-/* line 295, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .about .galery .wrap {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
-/* line 301, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .about .info {
   margin-top: 50px;
 }
-/* line 303, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 .about .info .title {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
 }
-/* line 308, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 .about .info .content {
   margin-top: 15px;
   margin-bottom: 150px;
 }
 
-/* line 317, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -361,30 +303,30 @@ main .contacts .wrapper .info .soc {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 327, ../scss/main.scss */
+/* line 279, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 332, ../scss/main.scss */
+/* line 284, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* line 339, ../scss/main.scss */
+/* line 291, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 344, ../scss/main.scss */
+/* line 296, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 348, ../scss/main.scss */
+/* line 300, ../scss/main.scss */
 .ui-line.orange {
   border: 2px solid #FF391E;
 }

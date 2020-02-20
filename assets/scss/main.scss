@@ -9,54 +9,6 @@ body {
 }
 
 main {
-	.slide-section {
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		align-items: center;
-		position: relative;
-		.slide {
-			background-repeat: no-repeat;
-			background-size: cover;
-			height: 600px;
-			width: 100%;
-			display: none;
-			&:nth-child(1) {
-				background-image: url('../image/home/slider_1.png');
-			}
-			&:nth-child(2) {
-				background-image: url('../image/home/slider_2.png');
-			}
-			&:nth-child(3) {
-				background-image: url('../image/home/slider_3.png');
-			}
-			&:nth-child(4) {
-				background-image: url('../image/home/slider_1.png');
-			}
-			&:nth-child(5) {
-				background-image: url('../image/home/slider_2.png');
-			}
-			&:nth-child(6) {
-				background-image: url('../image/home/slider_3.png');
-			}
-			&:nth-child(7) {
-				background-image: url('../image/home/slider_1.png');
-			}
-			&:nth-child(8) {
-				background-image: url('../image/home/slider_2.png');
-			}
-		}
-		button {
-			width: 570px;
-			font-size: 20px;
-			line-height: 23px;
-			letter-spacing: 0.05em;
-			text-transform: uppercase;
-			position: absolute;
-			bottom: 150px;
-		}
-	}
-
 	.informations {
 		margin-top: 150px;
 		width: 100%;

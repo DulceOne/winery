@@ -1,0 +1,56 @@
+.slider {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+	position: relative;
+	.owl-dots {
+		position: absolute;
+		bottom: -100px;
+		width: 800px;
+		left: calc(50% - 400px);
+		.owl-dot {
+			width: 70px;
+			margin-left: 30px;
+			background-color: rgba(255, 255, 255, 0.4);
+			height: 2px;
+			position: relative;
+			span {
+				position: absolute;
+				background-color: rgba(255, 255, 255, 1);
+				margin: 0px;
+				height: 2px;
+				width: 0%;
+				left: 0px;
+				top:0px;
+			}
+			&.active {
+				span {
+					transition: all 10s;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	.owl-item {
+		div {
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 600px;
+			width: 100%;
+		}
+	}
+
+	button {
+		width: 570px;
+		font-size: 20px;
+		line-height: 23px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		position: absolute;
+		bottom: 150px;
+		z-index: 1;
+	}
+
+}

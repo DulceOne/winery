@@ -7,22 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Winery</title>
     <? include './shared/links.php'; ?>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/owl/owl.carousel.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
+
 </head>
 <body>
 <? include './shared/header.php'; ?>
 
 <main>
-    <section class="slide-section">
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <div class="slide"></div>
-        <button class="btn">configurate you tour</button>
-    </section>
+    <? include './shared/slider.php'; ?>
 
     <section class="informations">
         <div class="items">
