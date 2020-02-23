@@ -1,31 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Winery</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tour</title>
     <? include './shared/links.php'; ?>
 </head>
 <body>
 <? include './shared/header.php'; ?>
 
-<div class="about">
+<div class="tour">
     <div class="header">
         about ul 
         <div class="ui-line orange"></div>
     </div>
     <div class="galery">
-        <img src="./assets/image/about/galery_1.png" class="full-size" alt="">
-        <!-- <div class="wrap">
-            <img src="./assets/image/about/galery_2.png" alt="">
-            <img src="./assets/image/about/galery_3.png" alt="">
-            <img src="./assets/image/about/galery_4.png" alt="">
-            <img src="./assets/image/about/galery_5.png" alt="">
-            <img src="./assets/image/about/galery_6.png" alt="">
-            <img src="./assets/image/about/galery_7.png" alt="">
-        </div> -->
+        <img src="./assets/image/tour/galery_1.png" class="full-size" alt="">
     </div>
     <div class="wrapper">
         <div class="info">

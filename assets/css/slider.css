@@ -5,15 +5,17 @@
   justify-content: flex-end;
   align-items: center;
   position: relative;
+  height: 500px;
+  width: 100%;
 }
-/* line 7, ../scss/slider.scss */
+/* line 9, ../scss/slider.scss */
 .slider .owl-dots {
   position: absolute;
-  bottom: -100px;
+  bottom: 50px;
   width: 800px;
   left: calc(50% - 400px);
 }
-/* line 12, ../scss/slider.scss */
+/* line 14, ../scss/slider.scss */
 .slider .owl-dots .owl-dot {
   width: 70px;
   margin-left: 30px;
@@ -21,7 +23,7 @@
   height: 2px;
   position: relative;
 }
-/* line 18, ../scss/slider.scss */
+/* line 20, ../scss/slider.scss */
 .slider .owl-dots .owl-dot span {
   position: absolute;
   background-color: white;
@@ -31,26 +33,26 @@
   left: 0px;
   top: 0px;
 }
-/* line 28, ../scss/slider.scss */
+/* line 30, ../scss/slider.scss */
 .slider .owl-dots .owl-dot.active span {
   transition: all 10s;
   width: 100%;
 }
-/* line 37, ../scss/slider.scss */
+/* line 39, ../scss/slider.scss */
 .slider .owl-item div {
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 500px;
   width: 100%;
 }
-/* line 45, ../scss/slider.scss */
-.slider button {
+/* line 47, ../scss/slider.scss */
+.slider .btn {
   width: 570px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   position: absolute;
-  bottom: 150px;
+  bottom: 115px;
   z-index: 1;
 }

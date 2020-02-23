@@ -1,10 +1,16 @@
 $(document).ready(() => {
-	
+   
+   const keyPages = {
+      'index.php':'#home',
+      'about.php': '#about',
+      'fleet.php': '#fleet',
+      'tours.php': '#tours',
+      'configurator.php': '#configurator'
+   }
 
-   const currentUrl = document.location;
-   console.log(currentUrl);
+   const currentUrl = document.location.pathname;
    drowLineToMenuItem();
-	if(currentUrl.pathname == "/winery/index.php" || currentUrl.pathname == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
+	if(currentUrl == "/winery/index.php" || currentUrl == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
 		$("header nav .scollTo").each( function() {
 			let temp = $(this).attr("href");
 			temp = temp.replace(/index.php/g,'')
@@ -30,30 +36,11 @@ $(document).ready(() => {
      });
 
    function drowLineToMenuItem() {
-      console.log(currentUrl)
-      switch(currentUrl.pathname) {
-         case '/winery/index.php':
-         case '/winery/':
-            $("#home").addClass('active');
-         break;
-
-         case '/winery/about.php':
-            $("#about").addClass('active');
-         break;
-
-         case '/winery/tours.php':
-            $("#tours").addClass('active');
-         break;
-
-         case '/winery/fleet.php':
-            $("#fleet").addClass('active');
-         break;
-
-         case '/winery/configurator.php':
-            $("#configurator").addClass('active');
-         break;
-      }
+      const locations = currentUrl.split('/');
+      const page = locations[locations.length-1]
+      $(keyPages[page]).addClass('active');
    }
+
 
 })
 

@@ -13,7 +13,7 @@ main {
 		margin-top: 150px;
 		width: 100%;
 		.items {
-			width: 1200px;
+			width: 1170px;
 			margin: auto;
 
 			.item {
@@ -30,6 +30,9 @@ main {
 					.info {
 						padding-left: 15px;
 						padding-right: 0px;
+						.btn {
+							width: calc(100% - 15px);
+						}
 					}
 				}
 				.header {
@@ -96,7 +99,7 @@ main {
 		padding: 100px 0px 150px 0px;
 		box-sizing: border-box;
 		.wrapper {
-			width: 1200px;
+			width: 1170px;
 			margin: auto;
 			display: flex;
 			color: white;
@@ -120,6 +123,7 @@ main {
 						font-size: 16px;
 						margin-top: 15px;
 						color: white;
+						outline: none;
 	
 						&::placeholder {
 							color: #D0D0D0;
@@ -143,7 +147,7 @@ main {
 					width: 300px;
 					display: flex;
 					justify-content: space-between;
-					margin-top: 15px;
+					margin-top: 25px;
 				}
 			}
 		}
@@ -152,9 +156,9 @@ main {
 
 // TOURS page
 
-.tours {
+.tours, .fleet {
 	.items {
-		width: 1200px;
+		width: 1170px;
 		margin: auto;
 		margin-bottom: 150px;
 
@@ -206,7 +210,7 @@ main {
 					position: absolute;
 					bottom: 0px;
 					left:15px;;
-					width: 100%;
+					width: calc(100% - 15px);
 					font-size: 20px;
 				}
 			}
@@ -229,10 +233,11 @@ main {
 	}
 }
 
-.about {
-	width: 1200px;
+.about, .tour {
+	width: 1170px;
 	margin: auto;
 	margin-top: 90px;
+	margin-bottom: 124px;
 	.header {
 		font-size: 24px;
 		text-transform: uppercase;
@@ -250,20 +255,72 @@ main {
 			justify-content: space-between;;
 		}
 	}
-	.info {
-		margin-top: 50px;
-		.title {
-			font-size: 20px;
-			text-transform: uppercase;
-			font-weight: bold;
+	.wrapper {
+		width: 100%;
+		display: flex;
+		.info {
+			margin-top: 50px;
+			width: 770px;
+			.title {
+				font-size: 20px;
+				text-transform: uppercase;
+				font-weight: bold;
+			}
+			.content {
+				margin-top: 15px;
+				margin-bottom: 150px;
+			}
 		}
-		.content {
-			margin-top: 15px;
-			margin-bottom: 150px;
+	
+		.galery-2 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex: 0;
+			padding-top: 85px;
+			margin-left: 30px;
+			img {
+				width: 370px;
+				height: 200px;
+				object-fit: cover;
+				&:nth-child(n+2) {
+					margin-top: 37px;
+				}
+			}
+		}
+	}
+
+}
+
+.fleet-view {
+	width: 100%;
+	margin-top: 90px;
+	min-height: 1000px;
+	.items {
+		width: 1170px;
+		margin: auto;
+		.item {
+			display: flex;
+			flex-wrap: wrap;
+			.title {
+				font-size: 24px;
+				text-transform: uppercase;
+				font-weight: bold;
+				position: relative;
+				width: 100%;
+			}
+			.galery {
+				width: 655px;
+			}
+			.values {
+				width: 400px;
+				.head {
+
+				}
+			}
 		}
 	}
 }
-
 
 //UI buttons style
 .btn {

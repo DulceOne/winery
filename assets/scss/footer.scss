@@ -1,15 +1,17 @@
 footer {
 	width: 100%;
+	height: 300px;
 	background-color: black;
 	.wrapper {
-		width: 1200px;
+		width:1170px;
 		margin: auto;
+		height: 100%;
 		display: flex;
 		color: white;
 		padding: 60px 0 60px 115px;
 		box-sizing: border-box;
 		.contacts {
-			width: 485px;
+			width: 470px;
 			border-right: 2px solid white;
 			.item {
 				font-size: 21px;
@@ -20,7 +22,7 @@ footer {
 				width: 300px;
 				display: flex;
 				justify-content: space-between;
-				margin-top: 15px;
+				margin-top: 25px;
 			}
 		}
 

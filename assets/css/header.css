@@ -9,7 +9,7 @@ header {
 }
 /* line 8, ../scss/header.scss */
 header .wrapper {
-  width: 1200px;
+  width: 1170px;
   margin: auto;
   display: flex;
   align-items: flex-end;
