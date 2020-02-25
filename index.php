@@ -40,10 +40,10 @@
                 </div>
 
                 <div class="galery">
-                    <img class="full-size" src="./assets/image/home/galery_1.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_2.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_3.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_4.png" alt="">
+                    <a href="./assets/image/home/galery_1.png" class="fresco"  data-fresco-group="galery_1" ><img class="full-size" src="./assets/image/home/galery_1.png" alt=""></a>
+                    <a href="./assets/image/home/galery_2.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_2.png" alt=""></a>
+                    <a href="./assets/image/home/galery_3.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_3.png" alt=""></a>
+                    <a href="./assets/image/home/galery_4.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_4.png" alt=""></a>
                 </div>
             </div>
 
@@ -61,10 +61,18 @@
                 </div>
 
                 <div class="galery">
-                    <img class="full-size" src="./assets/image/home/galery_1.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_2.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_3.png" alt="">
-                    <img class=small-size src="./assets/image/home/galery_4.png" alt="">
+                    <a href="./assets/image/home/galery_1.png" class="fresco"  data-fresco-group="galery_2">
+                        <img class=full-size src="./assets/image/home/galery_1.png" alt="">
+                    </a>
+                    <a href="./assets/image/home/galery_2.png" class="fresco"  data-fresco-group="galery_2">
+                        <img class=small-size src="./assets/image/home/galery_2.png" alt="">
+                    </a>
+                    <a href="./assets/image/home/galery_3.png" class="fresco"  data-fresco-group="galery_2">
+                        <img class=small-size src="./assets/image/home/galery_3.png" alt="">
+                    </a>
+                    <a href="./assets/image/home/galery_4.png" class="fresco"  data-fresco-group="galery_2">
+                        <img class=small-size src="./assets/image/home/galery_4.png" alt="">
+                    </a>
                 </div>
 
                 <div class="info">
@@ -73,7 +81,7 @@
                     Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
                     <br><br><br>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-                    <button class="btn light">more info</button>
+                    <a href="tour.php" class="btn light">more info</a>
                 </div>
 
             </div>
@@ -113,7 +121,6 @@
     </section>
 
 </main>
-
 <? include './shared/footer.php' ?>
 </body>
 </html>

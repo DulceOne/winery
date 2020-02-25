@@ -33,7 +33,7 @@
 				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
 				<br><br><br>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-				<button class="btn light">more info</button>
+				<a href="fleet-view.php" class="btn light">more info</a>
 			</div>
 		</div>
 
@@ -55,7 +55,7 @@
 				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
 				<br><br><br>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-				<button class="btn light">more info</button>
+				<a href="fleet-view.php" class="btn light">more info</a>
 			</div>
 		</div>
 
@@ -78,7 +78,7 @@
 				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
 				<br><br><br>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-				<button class="btn light">more info</button>
+				<a href="fleet-view.php" class="btn light">more info</a>
 			</div>
 		</div>
 
@@ -100,7 +100,7 @@
 				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
 				<br><br><br>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-				<button class="btn light">more info</button>
+				<a href="fleet-view.php" class="btn light">more info</a>
 			</div>
 		</div>
 

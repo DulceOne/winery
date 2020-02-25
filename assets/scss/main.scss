@@ -296,7 +296,7 @@ main {
 	width: 100%;
 	margin-top: 90px;
 	min-height: 1000px;
-	.items {
+	.wrapper {
 		width: 1170px;
 		margin: auto;
 		.item {
@@ -310,12 +310,37 @@ main {
 				width: 100%;
 			}
 			.galery {
-				width: 655px;
+				width: 654px
 			}
-			.values {
+			.info {
 				width: 400px;
-				.head {
+				padding-left: 100px;
+				.header {
+					color: #FF391E;
+					font-size: 20px;
+					letter-spacing: 0.05em;
+					text-transform: uppercase;
+					font-weight: bold;
+				}
+				.propertyes {
+					margin-top: 25px;
+					.wrap {
+						display: flex;
+						&:nth-child(n+2) {
+							margin-top: 20px;
+						}
+						.prop {
+							font-weight: bold;
+							width: 150px;
+						}
+						.value {
 
+						}
+					}
+				}
+
+				.description {
+					margin-top: 50px;
 				}
 			}
 		}
@@ -332,7 +357,7 @@ main {
 	color: white;
 	text-transform: uppercase;
 	cursor: pointer;
-
+	text-decoration: none;
 	&.light {
 		background: #FFFFFF;
 		color: #FF391E;

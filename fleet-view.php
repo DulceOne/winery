@@ -9,43 +9,40 @@
 <body>
 <? include './shared/header.php'; ?>
 <div class="fleet-view">
-	<div class="items">
-		<di class="item">
-			<div class="title">2016 MERCEDES-BENZ S-CLASS</div>
-			<div class="ui-line"></div>
-			<div class="info">
-				<div class="head">specifications</div>
-				<div class="galery">
-					<img class="full-size" src="./assets/image/fleet-view/galery_1.png" alt="">
-					<img src="./assets/image/fleet-view/galery_2.png" alt="">
-					<img src="./assets/image/fleet-view/galery_3.png" alt="">
-					<img src="./assets/image/fleet-view/galery_4.png" alt="">
-				</div>
+	<div class="wrapper">
+		<div class="item">
+			<div class="title">
+			2016 MERCEDES-BENZ S-CLASS
+			<div class="ui-line orange"></div>
+			</div>
 
-				<div class="values">
-					<div>
-						<div class="wrap">
-							<div class="property">Places</div>
-							<div class="value">3 place</div>
-						</div>
+			<div class="galery">
+				<img class="full-size" src="./assets/image/fleet-view/galery_1.png" alt="">
+				<img src="./assets/image/fleet-view/galery_2.png" alt="">
+				<img src="./assets/image/fleet-view/galery_3.png" alt="">
+				<img src="./assets/image/fleet-view/galery_4.png" alt="">
+			</div>
+
+			<div class="info">
+				<div class="header">specifications</div>
+				<div class="propertyes">
+					<div class="wrap">
+						<div class="prop">Places</div>
+						<div class="value">3 place</div>
 					</div>
-					<div>
-						<div class="wrap">
-							<div class="property">Color</div>
-							<div class="value">Grey</div>
-						</div>
+					<div class="wrap">
+						<div class="prop">Color</div>
+						<div class="value">Grey</div>
 					</div>
-					<div>
-						<div class="wrap">
-							<div class="property">Class</div>
-							<div class="value">Premium</div>
-						</div>
+					<div class="wrap">
+						<div class="prop">Class</div>
+						<div class="value">Premium</div>
 					</div>
 				</div>
-				<div class="content">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos atque nobis tempora corporis ullam facilis excepturi laborum dolor consequatur officia doloremque architecto, necessitatibus quas natus non quibusdam pariatur quasi? Corrupti?Laudantium quaerat, itaque atque sed quo maxime! Corporis facere nam perferendis quibusdam recusandae. Ratione ad quo itaque modi, a praesentium doloremque temporibus soluta odio saepe excepturi asperiores mollitia, fuga placeat?
+				<div class="description">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt quaerat magni, sit saepe, aliquid, vel dicta quasi numquam dolores earum quibusdam illo? Eos reprehenderit veniam nam soluta? Odit, distinctio facere?Doloribus odit, aliquid quisquam a laborum ipsa cumque maxime. Autem iusto molestiae fuga amet illum placeat non magnam commodi repudiandae quidem, quas rerum dolore distinctio aliquam maxime odit voluptatum odio!
 					<br><br>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique mollitia laborum dolorem! Dolores illo libero esse, provident amet eaque animi, odit dolorum, sed beatae incidunt voluptate eligendi modi sit.Consectetur sed enim amet, perferendis minus nulla libero cum asperiores tempore facilis cupiditate alias, provident illo iste voluptate! Quod soluta accusamus eligendi magni incidunt eveniet, dolore corporis iste qui facilis.
+					Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias esse, perferendis corrupti odio aut placeat blanditiis eum quo! Sed magni quia corrupti facilis maxime dicta officiis, odio natus distinctio ab?Soluta, dolores dicta. Voluptatibus quis quos asperiores similique veniam tenetur magnam. Voluptatum, aperiam vel. Molestias et ducimus voluptatum quas quam eaque accusantium, necessitatibus expedita, repudiandae quis voluptas? Dolor, hic sunt?
 				</div>
 			</div>
 		</div>
