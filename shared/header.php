@@ -9,7 +9,7 @@
             <a class="scollTo" href="about.php"id="about">about us</a>
             <a href="fleet.php" id="fleet">fleet</a>
             <a href="tours.php" id="tours">wine tour</a>
-            <a href="" id="configurator">configurator</a>
+            <a href="configurator.php" id="configurator">configurator</a>
             <a class="scollTo" href="index.php#contact">contact</a>
         </nav>
     </div>

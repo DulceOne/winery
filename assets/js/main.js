@@ -42,5 +42,13 @@ $(document).ready(() => {
    }
 
 
+   /// CONFIGURATOR
+   $("#steper").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      transitionEffect: "slide"
+  });
+  
+
 })
 
