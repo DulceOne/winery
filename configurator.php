@@ -15,7 +15,7 @@
 				<section id="first-step">
 					<div class="header">
 						<div class="title">
-							about us
+							select you tour
 							<div class="ui-line orange"></div>
 						</div>
 						<div class="controls">
@@ -144,19 +144,120 @@
 				</section>
 				<h3></h3>
 				<section id="second-step">
-					<p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula elementum pellentesque. 
-						In lobortis sollicitudin felis non eleifend. Morbi tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum 
-						dictum, nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur. 
-						In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-						Vestibulum leo velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. 
-						Donec non pulvinar urna. Aliquam id velit lacus.</p>
+					<div class="second-step">
+						<div class="map"><h1>MAP HERE</h1></div>
+						<form class="scond-step-form">
+							<h1>FORM HERE</h1>
+						</form>
+					</div>
 				</section>
-				<h3>Third Step</h3>
+				<h3></h3>
 				<section id="third-step">
-					<p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum dapibus. Fusce eros justo, 
-						pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. 
-						Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor mauris 
-						venenatis.</p>
+				<div class="header">
+						<div class="title">
+							select you class Car
+							<div class="ui-line orange"></div>
+						</div>
+						<div class="controls">
+							<img src="./assets/image/home/arrow_left.png" alt="">
+							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+						</div>
+						<div class="current-page">Step 3 with 5 </div>
+					</div>
+					<div class="steper-tours">
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">more</div>
+								<div class="btn">select</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">more</div>
+								<div class="btn">select</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">more</div>
+								<div class="btn">select</div>
+							</div>
+						</div>
+
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">more</div>
+								<div class="btn">select</div>
+							</div>
+						</div>
+
+					</div>
 				</section>
 				<h3></h3>
 				<section id="fourth-step">
