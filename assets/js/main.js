@@ -46,7 +46,7 @@ $(document).ready(() => {
    $("#steper").steps({
       headerTag: "h3",
       bodyTag: "section",
-      transitionEffect: "slideLeft"
+      transitionEffect: "fade"
   });
   
 
