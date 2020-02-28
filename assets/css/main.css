@@ -440,8 +440,105 @@ main .contacts .wrapper .info .soc {
 .full-wrapper .configurator #steper .steper-tours .item .controls .btn.white {
   color: #FF391E;
 }
-
+/* line 399, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 402, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .map {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+}
 /* line 407, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form {
+  width: 400px;
+  padding-left: 100px;
+}
+/* line 410, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .item {
+  margin-top: 25px;
+}
+/* line 412, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .item .title {
+  color: #FF391E;
+  font-size: 18px;
+}
+/* line 416, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .item input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  font-size: 18px;
+  width: 100%;
+  height: 35px;
+}
+/* line 427, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 430, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item {
+  margin-top: unset;
+}
+/* line 433, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block input {
+  width: 170px;
+}
+/* line 438, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .btn {
+  margin-top: 30px;
+}
+/* line 444, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 447, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .galery {
+  width: 700px;
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+/* line 455, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info {
+  width: 470px;
+  position: relative;
+}
+/* line 458, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info .title {
+  font-weight: bold;
+  font-size: 24px;
+}
+/* line 463, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info .desc {
+  font-weight: normal;
+  font-size: 16px;
+  margin-top: 15px;
+}
+/* line 469, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info .btns {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+/* line 476, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info .btns .btn {
+  width: 48%;
+}
+/* line 478, ../scss/main.scss */
+.full-wrapper .configurator #steper .fourth-step .info .btns .btn:nth-child(1) {
+  background: transparent;
+  color: #FF391E;
+}
+
+/* line 495, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -453,35 +550,35 @@ main .contacts .wrapper .info .soc {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 417, ../scss/main.scss */
+/* line 505, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 422, ../scss/main.scss */
+/* line 510, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
 
-/* line 429, ../scss/main.scss */
+/* line 517, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 434, ../scss/main.scss */
+/* line 522, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 438, ../scss/main.scss */
+/* line 526, ../scss/main.scss */
 .ui-line.orange {
   border: 2px solid #FF391E;
 }
 
-/* line 443, ../scss/main.scss */
+/* line 531, ../scss/main.scss */
 .header {
   width: 100%;
   flex: 100%;
@@ -489,18 +586,18 @@ main .contacts .wrapper .info .soc {
   display: flex;
   align-items: center;
 }
-/* line 449, ../scss/main.scss */
+/* line 537, ../scss/main.scss */
 .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 456, ../scss/main.scss */
+/* line 544, ../scss/main.scss */
 .header .controls {
   margin-left: 15px;
 }
-/* line 460, ../scss/main.scss */
+/* line 548, ../scss/main.scss */
 .header .current-page {
   font-size: 16px;
   color: #7A7A7A;

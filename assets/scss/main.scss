@@ -395,6 +395,94 @@ main {
 					}
 				}
 			}
+
+			.second-step {
+				display: flex;
+				flex-wrap: wrap;
+				.map {
+					width: 600px;
+					height: 300px;
+					border: 2px solid black;
+				}
+				.scond-step-form {
+					width: 400px;
+					padding-left: 100px;
+					.item {
+						margin-top: 25px;
+						.title {
+							color: #FF391E;
+							font-size: 18px;
+						}
+						input {
+							border: none;
+							outline: none;
+							border-bottom: 1px solid #000000;
+							background: transparent;
+							font-size: 18px;
+							width: 100%;
+							height: 35px;
+						}
+					}
+
+					.date-block {
+						display: flex;
+						justify-content: space-between;
+						.item {
+							margin-top: unset;
+						}
+						input {
+							width: 170px;
+						}
+					}
+
+					.btn {
+						margin-top: 30px;
+					}
+				}
+			}
+
+			.fourth-step {
+				display: flex;
+				flex-wrap: wrap;
+				.galery {
+					width: 700px;
+					padding-left: 45px;
+					box-sizing: border-box;
+					img {
+
+					}
+				}
+				.info {
+					width: 470px;
+					position: relative;
+					.title {
+						font-weight: bold;
+						font-size: 24px;
+					}
+	
+					.desc {
+						font-weight: normal;
+						font-size: 16px;
+						margin-top: 15px;
+					}
+	
+					.btns {
+						display: flex;
+						justify-content: space-between;
+						position: absolute;
+						width: 100%;
+						bottom: 0px;
+						left: 0px;
+						.btn {
+							width: 48%;
+							&:nth-child(1) {
+								background: transparent;
+								color: #FF391E;
+							}
+						}
+					}
+				}
+			}
 		}
 
 	}
