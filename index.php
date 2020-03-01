@@ -96,14 +96,14 @@
                     contaсt us 
                     <div class="ui-line white"></div>
                 </div>
-                <form action="">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="E-mail">
-                    <input type="text" placeholder="Selected tour">
-                    <input type="text" placeholder="You question?">
+                <form action="" class="home-contacts-form">
+                    <input type="text" placeholder="Name" id="name">
+                    <input type="text" placeholder="Phone" id="phone">
+                    <input type="text" placeholder="E-mail" id="email">
+                    <input type="text" placeholder="Selected tour" id="selectedTour">
+                    <input type="text" placeholder="You question?" id="question">
 
-                    <button class="btn white">send</button>
+                    <div class="btn white">send</div>
                 </form>
             </div>
 

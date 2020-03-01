@@ -25,76 +25,8 @@
 						<div class="current-page">Step 1 with 5 </div>
 					</div>
 					<div class="steper-tours">
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_1_tour.png" alt="">
-								<div class="info">
-									<div class="head">Wölffer Estate</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
 
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_1_tour.png" alt="">
-								<div class="info">
-									<div class="head">Wölffer Estate</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_1_tour.png" alt="">
-								<div class="info">
-									<div class="head">Wölffer Estate</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
-
-						<div class="item">
+						<div class="item template">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_1_tour.png" alt="">
 								<div class="info">
@@ -156,7 +88,12 @@
 						</div>
 						<div class="current-page">Step 2 with 5 </div>
 					</div>
-						<div class="map"><h1>MAP HERE</h1></div>
+						<div class="map">
+							<img src="https://maps.googleapis.com/maps/api/staticmap?center=Украина+Bridge,Запорожье,NY&zoom=13&size=600x300&maptype=roadmap
+&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
+&markers=color:red%7Clabel:C%7C40.718217,-73.998284
+&key=AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA">
+						</div>
 						<form class="scond-step-form">
 							<div class="date-block">
 								<div class="item">
@@ -194,7 +131,7 @@
 						</div>
 						<div class="current-page">Step 3 with 5 </div>
 					</div>
-					<div class="steper-tours">
+					<div class="steper-cars">
 						<div class="item">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
@@ -324,9 +261,103 @@
 				
 				<h3></h3>
 				<section id="fifth-step">
-					<p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate. Aliquam sed sem tortor. 
-						Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae. 
-						Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
+					<div class="steper-selected">
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">1200$</div>
+								<div class="btn">Change</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">100$</div>
+								<div class="btn">Change</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="wrapper">
+								<img src="./assets/image/configurator/step_3_car.png" alt="">
+								<div class="info">
+									<div class="head">sedans</div>
+									<div class="desc">
+										Lorem ipsum dolor sit amet, consectetur
+										adipiscing elit. Nunc ultricies cursus
+										lacus, ipsum eget morbi magna montes,
+										et. Aliquet curabitur aenean cursus
+										in. Arcu ut pulvinar elit arcu
+										imperdiet sed vel sit. Semper
+										posuere tristique sit metus. Semper
+										posuere tristique sit metus. 
+									</div>
+								</div>
+							</div>
+							<div class="controls">
+								<div class="btn white">500$</div>
+								<div class="btn">Change</div>
+							</div>
+						</div>
+
+						<div class="item form">
+							<div class="item-title">write information</div>
+							<div class="wrapper">
+								<form>
+									<div class="item-form">
+										<div class="title">Adress</div>
+										<input type="text">
+									</div>
+									<div class="item-form">
+										<div class="title">Adress</div>
+										<input type="text">
+									</div>
+									<div class="item-form">
+										<div class="title">Adress</div>
+										<input type="text">
+									</div>
+									<div class="item-form">
+										<div class="title">Adress</div>
+										<textarea name="" id="" cols="30" rows="10"></textarea>
+									</div>
+									<div class="price">total price <span>1800$</span</div>
+								</form>
+								</div>
+								<div class="controls">
+									<div class="btn">submit</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>
