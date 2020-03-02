@@ -28,29 +28,26 @@
 			</div>
 
 			<div class="info">
-				<div class="desc">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo numquam soluta eaque laborum nemo ipsam quia itaque in exercitationem sunt nesciunt odio at? Quidem nemo sunt vitae dolores est?
-					Eos ratione nam iusto repellat voluptatum quas eius nemo quidem aspernatur atque, accusamus ipsa dolor, deleniti soluta odit debitis consectetur! Itaque corrupti alias earum ipsum et laborum doloremque est natus!
-					Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
-					<br><br><br>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
-				</div>
-	
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo numquam soluta eaque laborum nemo ipsam quia itaque in exercitationem sunt nesciunt odio at? Quidem nemo sunt vitae dolores est?
+				Eos ratione nam iusto repellat voluptatum quas eius nemo quidem aspernatur atque, accusamus ipsa dolor, deleniti soluta odit debitis consectetur! Itaque corrupti alias earum ipsum et laborum doloremque est natus!
+				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
+				<br><br><br>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
 				<a href="tour.php" class="btn light">more info</a>
 
 			</div>
 		</div>
 
-		<div class="item template">
+		<div class="item second">
 			<div class="header">
 				<div class="title">
-					Wölffer Estate
+					Baiting Hollow Farm Vineyard
 					<div class="ui-line orange"></div>
 				</div>
 			</div>
 
 			<div class="galery">
-				<img class="full-size" src="./assets/image/tours/estate.png" alt="">
+				<img class="full-size" src="./assets/image/tours/vineyard.png" alt="">
 			</div>
 
 			<div class="info">
@@ -61,6 +58,51 @@
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
 				<a href="tour.php" class="btn light">more info</a>
 
+			</div>
+		</div>
+
+		<div class="item second">
+			<div class="header">
+				<div class="title">
+					Channing Daughters Winery
+					<div class="ui-line orange"></div>
+				</div>
+			</div>	
+
+			<div class="galery">
+				<img class="full-size" src="./assets/image/tours/winery.png" alt="">
+			</div>
+
+			
+			<div class="info">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo numquam soluta eaque laborum nemo ipsam quia itaque in exercitationem sunt nesciunt odio at? Quidem nemo sunt vitae dolores est?
+				Eos ratione nam iusto repellat voluptatum quas eius nemo quidem aspernatur atque, accusamus ipsa dolor, deleniti soluta odit debitis consectetur! Itaque corrupti alias earum ipsum et laborum doloremque est natus!
+				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
+				<br><br><br>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
+				<a href="tour.php" class="btn light">more info</a>
+			</div>
+		</div>
+
+		<div class="item second">
+			<div class="header">
+				<div class="title">
+					Martha Clara Vineyards
+					<div class="ui-line orange"></div>
+				</div>
+			</div>
+
+			<div class="galery">
+				<img class="full-size" src="./assets/image/tours/vineyards.png" alt="">
+			</div>
+
+			<div class="info">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, illo numquam soluta eaque laborum nemo ipsam quia itaque in exercitationem sunt nesciunt odio at? Quidem nemo sunt vitae dolores est?
+				Eos ratione nam iusto repellat voluptatum quas eius nemo quidem aspernatur atque, accusamus ipsa dolor, deleniti soluta odit debitis consectetur! Itaque corrupti alias earum ipsum et laborum doloremque est natus!
+				Ab quos quasi cupiditate consequatur tenetur cum corrupti nulla? Sint, reprehenderit! Architecto aspernatur, vitae omnis blanditiis a aut facere consequuntur nisi fugit illum animi ut perspiciatis debitis placeat deleniti. Id.
+				<br><br><br>
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id, quas qui exercitationem odit at ullam perferendis vitae eum accusantium dolorum. Quidem animi quaerat nam voluptas eum omnis facilis doloremque ab!
+				<a href="tour.php" class="btn light">more info</a>
 			</div>
 		</div>
 

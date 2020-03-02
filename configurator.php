@@ -49,29 +49,6 @@
 							</div>
 						</div>
 
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_1_tour.png" alt="">
-								<div class="info">
-									<div class="head">Wölffer Estate</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
-
 					</div>
 				</section>
 				<h3></h3>
@@ -89,10 +66,9 @@
 						<div class="current-page">Step 2 with 5 </div>
 					</div>
 						<div class="map">
-							<img src="https://maps.googleapis.com/maps/api/staticmap?center=Украина+Bridge,Запорожье,NY&zoom=13&size=600x300&maptype=roadmap
-&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318
-&markers=color:red%7Clabel:C%7C40.718217,-73.998284
-&key=AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA">
+							<img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap
+								&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&
+								&key=AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA">
 						</div>
 						<form class="scond-step-form">
 							<div class="date-block">
@@ -107,7 +83,7 @@
 							</div>
 							<div class="item">
 								<div class="title">Adress</div>
-								<input type="text">
+								<input type="text" placeholder="Brooklyn, NY 11213" id="step_adress">
 							</div>
 							<div class="item">
 								<div class="title">Wishes</div>
@@ -132,76 +108,10 @@
 						<div class="current-page">Step 3 with 5 </div>
 					</div>
 					<div class="steper-cars">
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_3_car.png" alt="">
-								<div class="info">
-									<div class="head">sedans</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
+						
 
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_3_car.png" alt="">
-								<div class="info">
-									<div class="head">sedans</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_3_car.png" alt="">
-								<div class="info">
-									<div class="head">sedans</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">more</div>
-								<div class="btn">select</div>
-							</div>
-						</div>
-
-						<div class="item">
+						
+						<div class="item template">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
 								<div class="info">
@@ -261,6 +171,17 @@
 				
 				<h3></h3>
 				<section id="fifth-step">
+					<div class="header">
+						<div class="title">
+							check wishlit wine tour
+							<div class="ui-line orange"></div>
+						</div>
+						<div class="controls">
+							<img src="./assets/image/home/arrow_left.png" alt="">
+							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+						</div>
+						<div class="current-page">Step 5 with 5 </div>
+					</div>
 					<div class="steper-selected">
 						<div class="item">
 							<div class="wrapper">
@@ -334,19 +255,19 @@
 							<div class="wrapper">
 								<form>
 									<div class="item-form">
-										<div class="title">Adress</div>
+										<div class="title">Name</div>
 										<input type="text">
 									</div>
 									<div class="item-form">
-										<div class="title">Adress</div>
+										<div class="title">Phone</div>
 										<input type="text">
 									</div>
 									<div class="item-form">
-										<div class="title">Adress</div>
+										<div class="title">E-mail</div>
 										<input type="text">
 									</div>
 									<div class="item-form">
-										<div class="title">Adress</div>
+										<div class="title">Wishes</div>
 										<textarea name="" id="" cols="30" rows="10"></textarea>
 									</div>
 									<div class="price">total price <span>1800$</span</div>

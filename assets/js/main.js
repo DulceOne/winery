@@ -13,6 +13,8 @@ $(document).ready(() => {
    const prefix = 'api';
    const fullURL = host+prefix;
    const currentUrl = document.location.pathname;
+   const googleMapUrl = 'https://maps.googleapis.com/maps/api/staticmap';
+   const googleMapApiKey = 'AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA';
 
    drowLineToMenuItem();
 	if(currentUrl == "/winery/index.php" || currentUrl == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
@@ -49,20 +51,15 @@ $(document).ready(() => {
    //Home contacts send
    const homeForm = $('.home-contacts-form')
    homeForm.find('.btn').click(() => {
-      const fullName = homeForm.find('#name').val()
-      const phoneNumber = homeForm.find('#phone').val()
-      const email = homeForm.find('#email').val()
-      const selectedTour = homeForm.find('#selectedTour').val()
-      const question = homeForm.find('#question').val()
       const body = {
-         fullName,
-         phoneNumber,
-         email,
-         selectedTour,
-         question
+         fullName: homeForm.find('#name').val(),
+         phoneNumber: homeForm.find('#phone').val(),
+         email: homeForm.find('#email').val(),
+         selectedTour: homeForm.find('#selectedTour').val(),
+         question: homeForm.find('#question').val()
       }
       console.log(body)
-      if(fullName && phoneNumber && email && selectedTour && question) {
+      if(body.fullName && body.phoneNumber && body.email && body.selectedTour && body.question) {
         const req = post('/contact',body);
         console.log(req);
         alert("contact form sending")
@@ -97,20 +94,59 @@ $(document).ready(() => {
       }
    }
 
-   getAllTours();
-   async function getAllTours () {
-      const tours =  await get('/winery-tours');
-      const template = $('.tours .items .template').clone();
+   // getAllTours();
+   // async function getAllTours () {
+   //    const tours =  await get('/winery-tours');
+   //    const template = $('.tours .items .template').clone();
+   //    const item = template.removeClass('template');
+   //    for(tour of tours) {
+   //       item.find('.title').html(tour.name);
+   //       item.find('.desc+').html(tour.description);
+   //       item.find('img').attr('src',host+tour.photos[0].default);
+   //       item.attr('data-id', tour.id);
+   //       $('.tours .items').append(item);
+   //    }
+   // }
+
+   getAllCarsGroupConfigurator();
+   async function getAllCarsGroupConfigurator() {
+      const cars =  await get('/car-groups');
+      const template = $('.steper-cars .template').clone();
       const item = template.removeClass('template');
-      for(tour of tours) {
-         item.find('.title').html(tour.name);
-         item.find('.desc+').html(tour.description);
-         item.find('img').attr('src',host+tour.photos[0].default);
-         item.attr('data-id', tour.id);
-         $('.tours .items').append(item);
+      console.log(item);
+      for(car of cars) {
+         item.find('.head').html(car.name);
+         item.find('.desc').html(car.description);
+         item.find('img').attr('src',host+car.photo.default);
+         item.attr('data-id', car.id);
+         $('.steper-cars').append(item);
       }
    }
 
+   //Draw Map
+   $('#step_adress').on('input',adressChanges);
+   function adressChanges() {
+      // const [city, street] = $(this).val().split(',');
+      
+      const value = $(this).val();
+      console.log(value)
+      if(value.length>3) {
+         $.ajax({
+            url:`https://maps.googleapis.com/maps/api/geocode/json?address=${value}&key=${googleMapApiKey}`,
+            type: 'GET',
+         }).then(result => {
+            console.log(result)
+            const {lat, lng} = result.results[0].geometry.location;
+            const map = $('.second-step .map img');
+            map.attr('src',`${googleMapUrl}?center=${value},NY&zoom=13&size=600x300&maptype=roadmap
+            &markers=color:red|${lat},${lng}&
+            &key=${googleMapApiKey}`);
+         })
+
+      }
+      
+
+   }
 
    // http methods
    function post(url, data) {
