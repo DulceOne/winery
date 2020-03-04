@@ -493,12 +493,14 @@ main {
 				flex-wrap: wrap;
 				.map {
 					width: 55vw;
+					margin-left: 1vw;
 					img {
 						width: 100%;
+						border: 2px solid rgba(0,0,0,0.3);
 					}
 				}
 				.scond-step-form {
-					width: 20vw;
+					width: 25vw;
 					position: relative;
 					box-sizing: border-box;
 					margin-left: 5vw;
@@ -522,12 +524,39 @@ main {
 					.date-block {
 						display: flex;
 						justify-content: space-between;
+						flex-wrap: wrap;
 						.item {
-							margin-top: unset;
-						}
-						input {
-							width: 170px;
-						}
+							width: 12vw;
+							font-size: 1vw;
+							.title {
+							  color: #FF391E;
+							}
+							.wrapper {
+							  position: relative;
+							  &::before {
+								content: '';
+								height: 10px;
+								width: 10px;
+								border-left: 1px solid #000000;
+								position: absolute;
+								bottom: 5px;
+								right: 15px;
+								z-index: 1;
+							  }
+							  select {
+								border: none;
+								width: 100%;
+								border-bottom: 1px solid #000000;
+								background: none;
+								position: relative;
+								outline: none;
+								text-align: center;
+								font-weight: 300;
+								font-size: 1vw;
+								margin-top: .5vw;
+							  }  
+							}
+						  }
 					}
 
 					.btn {

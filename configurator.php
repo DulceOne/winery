@@ -26,7 +26,7 @@
 					</div>
 					<div class="steper-tours">
 
-						<div class="item">
+						<div class="item template">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_1_tour.png" alt="">
 								<div class="info">
@@ -59,10 +59,6 @@
 							select you point, date and time
 							<div class="ui-line orange"></div>
 						</div>
-						<div class="controls">
-							<img src="./assets/image/home/arrow_left.png" alt="">
-							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
-						</div>
 						<div class="current-page">Step 2 with 5 </div>
 					</div>
 						<div class="map">
@@ -73,13 +69,37 @@
 						<form class="scond-step-form">
 							<div class="date-block">
 								<div class="item">
-									<div class="title">Date</div>
-									<input type="date">
+									<div class="title">Month</div>
+									<div class="wrapper">
+										<select id="month">
+										</select>  
+									</div>
 								</div>
+
 								<div class="item">
-									<div class="title">Time</div>
-									<input type="text">
+									<div class="title">Date</div>
+									<div class="wrapper">
+										<select id="date">
+										</select>  
+									</div>
 								</div>
+
+								<div class="item">
+									<div class="title">Hour</div>
+									<div class="wrapper">
+										<select id="hour">
+										</select>  
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="title">Minute</div>
+									<div class="wrapper">
+										<select id="minute">
+										</select>  
+									</div>
+								</div>
+
 							</div>
 							<div class="item">
 								<div class="title">Adress</div>
@@ -111,7 +131,7 @@
 						
 
 						
-						<div class="item">
+						<div class="item template">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
 								<div class="info">
@@ -175,10 +195,6 @@
 						<div class="title">
 							check wishlit wine tour
 							<div class="ui-line orange"></div>
-						</div>
-						<div class="controls">
-							<img src="./assets/image/home/arrow_left.png" alt="">
-							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
 						</div>
 						<div class="current-page">Step 5 with 5 </div>
 					</div>

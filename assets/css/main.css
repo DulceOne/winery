@@ -551,28 +551,30 @@ main .contacts .wrapper .info .soc {
 /* line 494, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .map {
   width: 55vw;
+  margin-left: 1vw;
 }
-/* line 496, ../scss/main.scss */
+/* line 497, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .map img {
   width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.3);
 }
-/* line 500, ../scss/main.scss */
+/* line 502, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form {
-  width: 20vw;
+  width: 25vw;
   position: relative;
   box-sizing: border-box;
   margin-left: 5vw;
 }
-/* line 505, ../scss/main.scss */
+/* line 507, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item {
   margin-top: 25px;
 }
-/* line 507, ../scss/main.scss */
+/* line 509, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item .title {
   color: #FF391E;
   font-size: 18px;
 }
-/* line 511, ../scss/main.scss */
+/* line 513, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item input {
   border: none;
   outline: none;
@@ -582,20 +584,50 @@ main .contacts .wrapper .info .soc {
   width: 100%;
   height: 35px;
 }
-/* line 522, ../scss/main.scss */
+/* line 524, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block {
   display: flex;
   justify-content: space-between;
-}
-/* line 525, ../scss/main.scss */
-.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item {
-  margin-top: unset;
+  flex-wrap: wrap;
 }
 /* line 528, ../scss/main.scss */
-.full-wrapper .configurator #steper .second-step .scond-step-form .date-block input {
-  width: 170px;
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item {
+  width: 12vw;
+  font-size: 1vw;
 }
-/* line 533, ../scss/main.scss */
+/* line 531, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .title {
+  color: #FF391E;
+}
+/* line 534, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper {
+  position: relative;
+}
+/* line 536, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper::before {
+  content: '';
+  height: 10px;
+  width: 10px;
+  border-left: 1px solid #000000;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  z-index: 1;
+}
+/* line 546, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper select {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  background: none;
+  position: relative;
+  outline: none;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1vw;
+  margin-top: .5vw;
+}
+/* line 562, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .btn {
   position: absolute;
   bottom: 0px;
@@ -603,34 +635,34 @@ main .contacts .wrapper .info .soc {
   right: 0px;
   box-sizing: border-box;
 }
-/* line 543, ../scss/main.scss */
+/* line 572, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 546, ../scss/main.scss */
+/* line 575, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .galery {
   width: 700px;
   padding-left: 45px;
   box-sizing: border-box;
 }
-/* line 554, ../scss/main.scss */
+/* line 583, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info {
   width: 470px;
   position: relative;
 }
-/* line 557, ../scss/main.scss */
+/* line 586, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .title {
   font-weight: bold;
   font-size: 24px;
 }
-/* line 562, ../scss/main.scss */
+/* line 591, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .desc {
   font-weight: normal;
   font-size: 16px;
   margin-top: 15px;
 }
-/* line 568, ../scss/main.scss */
+/* line 597, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns {
   display: flex;
   justify-content: space-between;
@@ -639,17 +671,17 @@ main .contacts .wrapper .info .soc {
   bottom: 0px;
   left: 0px;
 }
-/* line 575, ../scss/main.scss */
+/* line 604, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns .btn {
   width: 48%;
 }
-/* line 577, ../scss/main.scss */
+/* line 606, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns .btn:nth-child(1) {
   background: transparent;
   color: #FF391E;
 }
 
-/* line 594, ../scss/main.scss */
+/* line 623, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -662,45 +694,45 @@ main .contacts .wrapper .info .soc {
   text-decoration: none;
   transition: .3s all;
 }
-/* line 605, ../scss/main.scss */
+/* line 634, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 608, ../scss/main.scss */
+/* line 637, ../scss/main.scss */
 .btn.light:hover {
   color: white;
   background-color: #FF391E;
 }
-/* line 614, ../scss/main.scss */
+/* line 643, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
-/* line 619, ../scss/main.scss */
+/* line 648, ../scss/main.scss */
 .btn:hover {
   color: #FF391E;
   background-color: white;
 }
 
-/* line 625, ../scss/main.scss */
+/* line 654, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 630, ../scss/main.scss */
+/* line 659, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 634, ../scss/main.scss */
+/* line 663, ../scss/main.scss */
 .ui-line.orange {
   border-bottom: 2px solid #FF391E;
 }
 
-/* line 639, ../scss/main.scss */
+/* line 668, ../scss/main.scss */
 .header {
   width: 100%;
   flex: 100%;
@@ -708,18 +740,18 @@ main .contacts .wrapper .info .soc {
   display: flex;
   align-items: center;
 }
-/* line 645, ../scss/main.scss */
+/* line 674, ../scss/main.scss */
 .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 652, ../scss/main.scss */
+/* line 681, ../scss/main.scss */
 .header .controls {
   margin-left: 15px;
 }
-/* line 656, ../scss/main.scss */
+/* line 685, ../scss/main.scss */
 .header .current-page {
   font-size: 16px;
   color: #7A7A7A;

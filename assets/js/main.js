@@ -9,7 +9,7 @@ $(document).ready(() => {
    }
 
    //settings
-   const host = 'http://9dd9969c.ngrok.io/';
+   const host = 'http://192.168.0.101:8000/';
    const prefix = 'api';
    const fullURL = host+prefix;
    const currentUrl = document.location.pathname;
@@ -88,7 +88,7 @@ $(document).ready(() => {
       for(tour of tours) {
          item.find('.head').html(tour.name);
          item.find('.desc').html(tour.description);
-         item.find('img').attr('src',host+tour.photos[0].default);
+         item.find('img').attr('src',host+tour.photos[0]['configurator-card']);
          item.attr('data-id', tour.id);
          $('.steper-tours').append(item);
       }
@@ -117,7 +117,7 @@ $(document).ready(() => {
       for(car of cars) {
          item.find('.head').html(car.name);
          item.find('.desc').html(car.description);
-         item.find('img').attr('src',host+car.photo.default);
+         item.find('img').attr('src',host+car.photo['configurator-card']);
          item.attr('data-id', car.id);
          $('.steper-cars').append(item);
       }
@@ -142,6 +142,61 @@ $(document).ready(() => {
          })
       }
    }
+
+   function initMounth() {
+      var month = ["January","February","March","April","May","June","July",
+      "August","September","October","November","December"].forEach((elem, index) => {
+            let option = `<option value='${index+1}'>${elem}</option>`;
+          $('.scond-step-form #month').append(option);
+      })
+    }
+    initMounth()
+
+    $('.scond-step-form #month').change(function () {
+      const month = $(this).val();
+      const days = daysInMonth(month);
+      console.log(days);
+      for(i=1; i<days; i++) {
+         let option = `<option value='${i}'>${i}</option>`;
+         $('.scond-step-form #date').append(option);
+      }
+    })
+
+    function initDate() {
+      
+    }
+
+    function initTime() {
+      const hour = 24;
+      const minute = 60;
+      for(i=0; i< hour; i++) {
+         const option = `<option value='${getZerro(i)}'>${getZerro(i)}</option>`;
+         $('.scond-step-form #hour').append(option)
+      }
+
+      for(i=1; i< minute; i++) {
+         const option = `<option value='${getZerro(i)}'>${getZerro(i)}</option>`;
+         $('.scond-step-form #minute').append(option);
+      }
+    }
+    initTime();
+
+    function daysInMonth (month) {
+      const year = new Date().getFullYear();
+      return new Date(year, month, 0).getDate();
+   }
+
+   ///step 2
+   $('.scond-step-form .btn').click(function() {
+      const 
+   })
+  
+
+   function getZerro(number) {
+      return number > 9 ? number: '0' + number;
+   }
+
+
 
    // http methods
    function post(url, data) {
@@ -174,6 +229,5 @@ $(document).ready(() => {
         })
       })
     }
-
 })
 
