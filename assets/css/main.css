@@ -386,54 +386,72 @@ main .contacts .wrapper .info .soc {
 }
 /* line 351, ../scss/main.scss */
 .full-wrapper .configurator {
-  width: 1170px;
+  width: 99vw;
+  height: calc(100vh - 105px);
   margin: auto;
+  box-sizing: border-box;
 }
-/* line 357, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .full-wrapper .configurator #steper .steps {
   display: none;
 }
-/* line 360, ../scss/main.scss */
+/* line 362, ../scss/main.scss */
+.full-wrapper .configurator #steper .header {
+  padding-left: 5vw;
+  box-sizing: border-box;
+}
+/* line 365, ../scss/main.scss */
+.full-wrapper .configurator #steper .header .title {
+  font-size: 1.5vw !important;
+}
+/* line 369, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours, .full-wrapper .configurator #steper .steper-cars, .full-wrapper .configurator #steper .steper-selected {
   display: flex;
   width: 100%;
   overflow: hidden;
-  padding-bottom: 45px;
+  height: 75vh;
+  padding-left: 5vw;
+  box-sizing: border-box;
 }
-/* line 365, ../scss/main.scss */
+/* line 376, ../scss/main.scss */
+.full-wrapper .configurator #steper .steper-tours .header, .full-wrapper .configurator #steper .steper-cars .header, .full-wrapper .configurator #steper .steper-selected .header {
+  padding-left: 5vw;
+}
+/* line 379, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item, .full-wrapper .configurator #steper .steper-cars .item, .full-wrapper .configurator #steper .steper-selected .item {
-  width: 270px;
-  min-height: 400px;
+  width: 20vw;
+  max-height: 65vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
   transition: 1s all;
 }
-/* line 373, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item:hover, .full-wrapper .configurator #steper .steper-cars .item:hover, .full-wrapper .configurator #steper .steper-selected .item:hover {
   -webkit-box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 378, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item:nth-child(n+2), .full-wrapper .configurator #steper .steper-cars .item:nth-child(n+2), .full-wrapper .configurator #steper .steper-selected .item:nth-child(n+2) {
   margin-left: 30px;
 }
-/* line 381, ../scss/main.scss */
+/* line 396, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.template, .full-wrapper .configurator #steper .steper-cars .item.template, .full-wrapper .configurator #steper .steper-selected .item.template {
   display: none;
 }
-/* line 384, ../scss/main.scss */
+/* line 399, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form, .full-wrapper .configurator #steper .steper-cars .item.form, .full-wrapper .configurator #steper .steper-selected .item.form {
   background-color: transparent;
   justify-content: start;
 }
-/* line 387, ../scss/main.scss */
+/* line 402, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form:hover, .full-wrapper .configurator #steper .steper-cars .item.form:hover, .full-wrapper .configurator #steper .steper-selected .item.form:hover {
   box-shadow: none;
 }
-/* line 390, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .item-title, .full-wrapper .configurator #steper .steper-cars .item.form .item-title, .full-wrapper .configurator #steper .steper-selected .item.form .item-title {
   font-weight: 500;
   font-size: 16px;
@@ -443,23 +461,23 @@ main .contacts .wrapper .info .soc {
   text-align: center;
   margin-bottom: 45px;
 }
-/* line 399, ../scss/main.scss */
+/* line 414, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 405, ../scss/main.scss */
+/* line 420, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form {
   margin-top: 10px;
 }
-/* line 407, ../scss/main.scss */
+/* line 422, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form .title, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form .title, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form .title {
   color: #FF391E;
   font-size: 12px;
 }
-/* line 411, ../scss/main.scss */
+/* line 426, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form textarea {
   border: none;
   outline: none;
@@ -470,11 +488,11 @@ main .contacts .wrapper .info .soc {
   height: 20px;
   resize: none;
 }
-/* line 421, ../scss/main.scss */
+/* line 436, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form textarea {
   height: 50px;
 }
-/* line 425, ../scss/main.scss */
+/* line 440, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .price, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .price, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .price {
   font-weight: 500;
   font-size: 16px;
@@ -484,73 +502,77 @@ main .contacts .wrapper .info .soc {
   margin-top: 25px;
   text-transform: uppercase;
 }
-/* line 433, ../scss/main.scss */
+/* line 448, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .price span, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .price span, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .price span {
   color: #FF391E;
 }
-/* line 441, ../scss/main.scss */
+/* line 456, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper img, .full-wrapper .configurator #steper .steper-cars .item .wrapper img, .full-wrapper .configurator #steper .steper-selected .item .wrapper img {
+  max-height: 25vh;
   margin: auto;
-  display: flex;
-  max-height: 180px;
+  width: 20vw;
 }
-/* line 446, ../scss/main.scss */
+/* line 461, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info {
   padding: 10px 15px;
 }
-/* line 448, ../scss/main.scss */
+/* line 463, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info .head, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info .head, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info .head {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1vw;
   line-height: 19px;
   text-transform: uppercase;
 }
-/* line 454, ../scss/main.scss */
+/* line 469, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info .desc, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info .desc, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info .desc {
-  font-size: 13px;
-  line-height: 15px;
+  font-size: .9vw;
+  line-height: 1vw;
   letter-spacing: 0.05em;
-  margin-top: 15px;
+  margin-top: .5vw;
 }
-/* line 463, ../scss/main.scss */
+/* line 478, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls, .full-wrapper .configurator #steper .steper-cars .item .controls, .full-wrapper .configurator #steper .steper-selected .item .controls {
   display: flex;
   width: 100%;
 }
-/* line 466, ../scss/main.scss */
+/* line 481, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls .btn, .full-wrapper .configurator #steper .steper-cars .item .controls .btn, .full-wrapper .configurator #steper .steper-selected .item .controls .btn {
   width: 100%;
 }
-/* line 468, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls .btn.white, .full-wrapper .configurator #steper .steper-cars .item .controls .btn.white, .full-wrapper .configurator #steper .steper-selected .item .controls .btn.white {
   color: #FF391E;
 }
-/* line 476, ../scss/main.scss */
+/* line 491, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 479, ../scss/main.scss */
+/* line 494, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .map {
-  width: 600px;
-  height: 300px;
-  border: 2px solid black;
+  width: 55vw;
 }
-/* line 484, ../scss/main.scss */
+/* line 496, ../scss/main.scss */
+.full-wrapper .configurator #steper .second-step .map img {
+  width: 100%;
+}
+/* line 500, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form {
-  width: 400px;
-  padding-left: 100px;
+  width: 20vw;
+  position: relative;
+  box-sizing: border-box;
+  margin-left: 5vw;
 }
-/* line 487, ../scss/main.scss */
+/* line 505, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item {
   margin-top: 25px;
 }
-/* line 489, ../scss/main.scss */
+/* line 507, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item .title {
   color: #FF391E;
   font-size: 18px;
 }
-/* line 493, ../scss/main.scss */
+/* line 511, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item input {
   border: none;
   outline: none;
@@ -560,51 +582,55 @@ main .contacts .wrapper .info .soc {
   width: 100%;
   height: 35px;
 }
-/* line 504, ../scss/main.scss */
+/* line 522, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block {
   display: flex;
   justify-content: space-between;
 }
-/* line 507, ../scss/main.scss */
+/* line 525, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item {
   margin-top: unset;
 }
-/* line 510, ../scss/main.scss */
+/* line 528, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block input {
   width: 170px;
 }
-/* line 515, ../scss/main.scss */
+/* line 533, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .btn {
-  margin-top: 30px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  box-sizing: border-box;
 }
-/* line 521, ../scss/main.scss */
+/* line 543, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 524, ../scss/main.scss */
+/* line 546, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .galery {
   width: 700px;
   padding-left: 45px;
   box-sizing: border-box;
 }
-/* line 532, ../scss/main.scss */
+/* line 554, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info {
   width: 470px;
   position: relative;
 }
-/* line 535, ../scss/main.scss */
+/* line 557, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .title {
   font-weight: bold;
   font-size: 24px;
 }
-/* line 540, ../scss/main.scss */
+/* line 562, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .desc {
   font-weight: normal;
   font-size: 16px;
   margin-top: 15px;
 }
-/* line 546, ../scss/main.scss */
+/* line 568, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns {
   display: flex;
   justify-content: space-between;
@@ -613,17 +639,17 @@ main .contacts .wrapper .info .soc {
   bottom: 0px;
   left: 0px;
 }
-/* line 553, ../scss/main.scss */
+/* line 575, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns .btn {
   width: 48%;
 }
-/* line 555, ../scss/main.scss */
+/* line 577, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .info .btns .btn:nth-child(1) {
   background: transparent;
   color: #FF391E;
 }
 
-/* line 572, ../scss/main.scss */
+/* line 594, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -636,45 +662,45 @@ main .contacts .wrapper .info .soc {
   text-decoration: none;
   transition: .3s all;
 }
-/* line 583, ../scss/main.scss */
+/* line 605, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 586, ../scss/main.scss */
+/* line 608, ../scss/main.scss */
 .btn.light:hover {
   color: white;
   background-color: #FF391E;
 }
-/* line 592, ../scss/main.scss */
+/* line 614, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
-/* line 597, ../scss/main.scss */
+/* line 619, ../scss/main.scss */
 .btn:hover {
   color: #FF391E;
   background-color: white;
 }
 
-/* line 603, ../scss/main.scss */
+/* line 625, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 608, ../scss/main.scss */
+/* line 630, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 612, ../scss/main.scss */
+/* line 634, ../scss/main.scss */
 .ui-line.orange {
   border-bottom: 2px solid #FF391E;
 }
 
-/* line 617, ../scss/main.scss */
+/* line 639, ../scss/main.scss */
 .header {
   width: 100%;
   flex: 100%;
@@ -682,18 +708,18 @@ main .contacts .wrapper .info .soc {
   display: flex;
   align-items: center;
 }
-/* line 623, ../scss/main.scss */
+/* line 645, ../scss/main.scss */
 .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 630, ../scss/main.scss */
+/* line 652, ../scss/main.scss */
 .header .controls {
   margin-left: 15px;
 }
-/* line 634, ../scss/main.scss */
+/* line 656, ../scss/main.scss */
 .header .current-page {
   font-size: 16px;
   color: #7A7A7A;

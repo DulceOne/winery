@@ -349,22 +349,37 @@ main {
 	background-size: cover;
 	min-height: 100vh;
 	.configurator {
-		width: 1170px;
+		width: 99vw;
+		height: calc(100vh - 105px);
 		margin: auto;
+		box-sizing: border-box;
 
 		#steper {
 
 			.steps {
 				display: none;
 			}
+			.header {
+				padding-left: 5vw;
+				box-sizing: border-box;
+				.title {
+					font-size: 1.5vw!important;
+				}
+			}
 			.steper-tours, .steper-cars, .steper-selected {
 				display: flex;
 				width: 100%;
 				overflow: hidden;
-				padding-bottom: 45px;
+				height: 75vh;
+				padding-left: 5vw;
+				box-sizing: border-box;
+				.header {
+					padding-left: 5vw;
+				}
 				.item {
-					width: 270px;
-					min-height: 400px;
+					width: 20vw;
+					max-height: 65vh;
+					height: 100%;
 					display: flex;
 					flex-direction: column;
 					justify-content: space-between;
@@ -439,23 +454,23 @@ main {
 					}
 					.wrapper {
 						img {
+							max-height: 25vh;
 							margin: auto;
-							display: flex;
-							max-height: 180px;
+							width: 20vw;
 						}
 						.info {
 							padding: 10px 15px;
 							.head {
 								font-weight: 500;
-								font-size: 16px;
+								font-size: 1vw;
 								line-height: 19px;
 								text-transform: uppercase;
 							}
 							.desc {
-								font-size: 13px;
-								line-height: 15px;
+								font-size: .9vw;
+								line-height: 1vw;
 								letter-spacing: 0.05em;
-								margin-top: 15px;
+								margin-top: .5vw;
 							}
 						}
 					}
@@ -477,13 +492,16 @@ main {
 				display: flex;
 				flex-wrap: wrap;
 				.map {
-					width: 600px;
-					height: 300px;
-					border: 2px solid black;
+					width: 55vw;
+					img {
+						width: 100%;
+					}
 				}
 				.scond-step-form {
-					width: 400px;
-					padding-left: 100px;
+					width: 20vw;
+					position: relative;
+					box-sizing: border-box;
+					margin-left: 5vw;
 					.item {
 						margin-top: 25px;
 						.title {
@@ -513,7 +531,11 @@ main {
 					}
 
 					.btn {
-						margin-top: 30px;
+						position: absolute;
+						bottom: 0px;
+						left: 0px;
+						right: 0px;
+						box-sizing: border-box;
 					}
 				}
 			}

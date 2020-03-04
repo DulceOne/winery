@@ -127,25 +127,20 @@ $(document).ready(() => {
    $('#step_adress').on('input',adressChanges);
    function adressChanges() {
       // const [city, street] = $(this).val().split(',');
-      
       const value = $(this).val();
-      console.log(value)
+
       if(value.length>3) {
          $.ajax({
             url:`https://maps.googleapis.com/maps/api/geocode/json?address=${value}&key=${googleMapApiKey}`,
             type: 'GET',
          }).then(result => {
-            console.log(result)
             const {lat, lng} = result.results[0].geometry.location;
             const map = $('.second-step .map img');
             map.attr('src',`${googleMapUrl}?center=${value},NY&zoom=13&size=600x300&maptype=roadmap
             &markers=color:red|${lat},${lng}&
             &key=${googleMapApiKey}`);
          })
-
       }
-      
-
    }
 
    // http methods

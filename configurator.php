@@ -26,7 +26,7 @@
 					</div>
 					<div class="steper-tours">
 
-						<div class="item template">
+						<div class="item">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_1_tour.png" alt="">
 								<div class="info">
@@ -111,7 +111,7 @@
 						
 
 						
-						<div class="item template">
+						<div class="item">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
 								<div class="info">
@@ -283,7 +283,7 @@
 			</div>
 		</div>
 	</section>
-	<? include './shared/footer.php'?>
+	<!-- <? include './shared/footer.php'?> -->
 
 </body>
 </html>
