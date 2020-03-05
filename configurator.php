@@ -27,6 +27,7 @@
 					<div class="steper-tours">
 
 						<div class="item template">
+							<img class="close " src="./assets/image/configurator/close.svg" alt="">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_1_tour.png" alt="">
 								<div class="info">
@@ -45,7 +46,7 @@
 							</div>
 							<div class="controls">
 								<div class="btn white">more</div>
-								<div class="btn">select</div>
+								<div class="btn select">select</div>
 							</div>
 						</div>
 
@@ -107,7 +108,7 @@
 							</div>
 							<div class="item">
 								<div class="title">Wishes</div>
-								<input type="text">
+								<input type="text" id="wishes">
 							</div>
 
 							<div class="btn">submit</div>
@@ -132,6 +133,7 @@
 
 						
 						<div class="item template">
+							<img class="close " src="./assets/image/configurator/close.svg" alt="">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
 								<div class="info">
@@ -150,7 +152,7 @@
 							</div>
 							<div class="controls">
 								<div class="btn white">more</div>
-								<div class="btn">select</div>
+								<div class="btn select">select</div>
 							</div>
 						</div>
 
@@ -159,6 +161,7 @@
 				<h3></h3>
 				<section id="fourth-step">
 					<div class="fourth-step">
+
 						<div class="header">
 							<div class="title">
 								select you class Car
@@ -170,22 +173,25 @@
 							</div>
 							<div class="current-page">Step 4 with 5 </div>
 						</div>
-						<div class="galery">
-							<img src="./assets/image/configurator/car.png" alt="">
-						</div>
-						<div class="info">
-							<div class="title">2016 MERCEDES-BENZ S-CLASS</div>
-							<div class="desc">
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dolore impedit deleniti laboriosam sapiente sequi, doloribus voluptas quaerat mollitia? Eaque, accusamus repellat quasi assumenda praesentium cumque dolore quo reiciendis esse.Deserunt voluptatibus illo ducimus nihil itaque enim modi nulla, deleniti, tenetur animi obcaecati? Sequi illo velit veniam enim porro quisquam eius, at modi provident quibusdam ab, repellendus, maxime corporis similique?
-								<br><br>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque quas officiis dolorem fugiat, animi distinctio sapiente soluta suscipit! Earum modi sunt qui reiciendis, explicabo dolorem libero ratione debitis architecto!Ipsum libero consectetur expedita dolor, asperiores nobis quidem ut, vel nesciunt omnis fuga laboriosam iste quis! Quidem amet fugiat facere esse, voluptatum, ad minus repellendus veritatis illo exercitationem ullam cupiditate.
+						<div class="item template">
+							<div class="galery">
+								<img src="./assets/image/configurator/car.png" alt="">
 							</div>
+							<div class="info">
+								<div class="title">2016 MERCEDES-BENZ S-CLASS</div>
+								<div class="desc">
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum dolore impedit deleniti laboriosam sapiente sequi, doloribus voluptas quaerat mollitia? Eaque, accusamus repellat quasi assumenda praesentium cumque dolore quo reiciendis esse.Deserunt voluptatibus illo ducimus nihil itaque enim modi nulla, deleniti, tenetur animi obcaecati? Sequi illo velit veniam enim porro quisquam eius, at modi provident quibusdam ab, repellendus, maxime corporis similique?
+									<br><br>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eaque quas officiis dolorem fugiat, animi distinctio sapiente soluta suscipit! Earum modi sunt qui reiciendis, explicabo dolorem libero ratione debitis architecto!Ipsum libero consectetur expedita dolor, asperiores nobis quidem ut, vel nesciunt omnis fuga laboriosam iste quis! Quidem amet fugiat facere esse, voluptatum, ad minus repellendus veritatis illo exercitationem ullam cupiditate.
+								</div>
 
-							<div class="btns">
-								<div class="btn">more</div>
-								<div class="btn">select</div>
+								<div class="btns">
+									<div class="btn">more</div>
+									<div class="btn select">select</div>
+								</div>
 							</div>
 						</div>
+						
 					</div>
 				</section>
 				
@@ -199,51 +205,8 @@
 						<div class="current-page">Step 5 with 5 </div>
 					</div>
 					<div class="steper-selected">
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_3_car.png" alt="">
-								<div class="info">
-									<div class="head">sedans</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">1200$</div>
-								<div class="btn">Change</div>
-							</div>
-						</div>
-						<div class="item">
-							<div class="wrapper">
-								<img src="./assets/image/configurator/step_3_car.png" alt="">
-								<div class="info">
-									<div class="head">sedans</div>
-									<div class="desc">
-										Lorem ipsum dolor sit amet, consectetur
-										adipiscing elit. Nunc ultricies cursus
-										lacus, ipsum eget morbi magna montes,
-										et. Aliquet curabitur aenean cursus
-										in. Arcu ut pulvinar elit arcu
-										imperdiet sed vel sit. Semper
-										posuere tristique sit metus. Semper
-										posuere tristique sit metus. 
-									</div>
-								</div>
-							</div>
-							<div class="controls">
-								<div class="btn white">100$</div>
-								<div class="btn">Change</div>
-							</div>
-						</div>
-						<div class="item">
+
+						<div class="item template">
 							<div class="wrapper">
 								<img src="./assets/image/configurator/step_3_car.png" alt="">
 								<div class="info">
@@ -262,7 +225,7 @@
 							</div>
 							<div class="controls">
 								<div class="btn white">500$</div>
-								<div class="btn">Change</div>
+								<div class="btn change">Change</div>
 							</div>
 						</div>
 
@@ -284,7 +247,10 @@
 									</div>
 									<div class="item-form">
 										<div class="title">Wishes</div>
-										<textarea name="" id="" cols="30" rows="10"></textarea>
+										<textarea disabled>Lorem ipsum dolor sit amet, consectetur
+										 adipisicing elit. Maiores sint porro ad odio quae repellat similique? Quaerat quia,
+										  sit atque ex iusto, culpa fuga aliquid reprehenderit ipsum, ipsam alias? Non.
+										</textarea>
 									</div>
 									<div class="price">total price <span>1800$</span</div>
 								</form>

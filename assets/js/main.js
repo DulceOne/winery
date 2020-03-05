@@ -15,6 +15,8 @@ $(document).ready(() => {
    const currentUrl = document.location.pathname;
    const googleMapUrl = 'https://maps.googleapis.com/maps/api/staticmap';
    const googleMapApiKey = 'AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA';
+   const win_tours = [];
+   const win_cars = [];
 
    drowLineToMenuItem();
 	if(currentUrl == "/winery/index.php" || currentUrl == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
@@ -83,15 +85,60 @@ $(document).ready(() => {
    getAllToursInConfigurato();
    async function getAllToursInConfigurato () {
       const tours =  await get('/winery-tours');
-      const template = $('.steper-tours .template').clone();
-      const item = template.removeClass('template');
+
       for(tour of tours) {
+         const template = $('.steper-tours .template').clone();      
+         const item = template.removeClass('template');
          item.find('.head').html(tour.name);
          item.find('.desc').html(tour.description);
-         item.find('img').attr('src',host+tour.photos[0]['configurator-card']);
+         item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
          item.attr('data-id', tour.id);
          $('.steper-tours').append(item);
+
+         item.find('.btn.select').click(function()  {
+            const id = $(this).parents('.item').data('id');
+            selectTour(id)
+         });
+
+         item.find('.close').click(function() {
+            const id = $(this).parents('.item').data('id');
+            removeTour(id)
+         })
       }
+   }
+
+
+   // step 1 select tours
+
+   function selectTour(id) {
+      const tours = JSON.parse(localStorage.getItem('wine_tours')) || [];
+
+      const tour_exist = tours.find(v => v == id);
+      if(!tour_exist) {
+         tours.push(id);
+         const items = $('.steper-tours .item');
+         $(items).each(function () {
+            if($(this).data('id') == id) {
+               $(this).addClass('selected');
+            }
+         })
+      }
+
+      localStorage.setItem('wine_tours', JSON.stringify(tours));
+   }
+
+   function removeTour(id) {
+      const items = $('.steper-tours .item');
+      let tours = JSON.parse(localStorage.getItem('wine_tours'));
+
+      tours = tours.filter(tId => tId != id);
+      $(items).each(function () {
+         if($(this).data('id') == id) {
+            $(this).removeClass('selected');
+         }
+      })
+      localStorage.setItem('wine_tours', JSON.stringify(tours));
+
    }
 
    // getAllTours();
@@ -111,15 +158,45 @@ $(document).ready(() => {
    getAllCarsGroupConfigurator();
    async function getAllCarsGroupConfigurator() {
       const cars =  await get('/car-groups');
-      const template = $('.steper-cars .template').clone();
-      const item = template.removeClass('template');
-      console.log(item);
+
       for(car of cars) {
+         const template = $('.steper-cars .template').clone();
+         const item = template.removeClass('template');
          item.find('.head').html(car.name);
          item.find('.desc').html(car.description);
-         item.find('img').attr('src',host+car.photo['configurator-card']);
+         item.find('.wrapper img').attr('src',host+car.photo['configurator-card']);
          item.attr('data-id', car.id);
          $('.steper-cars').append(item);
+
+         item.find('.btn.select').click(function()  {
+            const id = $(this).parents('.item').data('id');
+            // localStorage.setItem('car_id', JSON.stringify(id));
+            get(`/car-groups/${id}`).then((cars) => {
+               $("#steper").steps('next');
+               drawCars(cars)
+            })
+         });
+      }
+   }
+
+
+   function drawCars(cars) {
+      $('.fourth-step .item').not('.template').remove();
+      for(car of cars) {
+         const template = $('.fourth-step .template').clone();
+         const item = template.removeClass('template');
+         item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
+         item.find('.info .title').html(car.name);
+         item.find('.desc').html(car.description);
+         item.attr('data-id', car.id);
+         $('.fourth-step').append(item);
+
+         item.find('.btn.select').click(function () {
+            const id = $(this).parents('.item').data('id');
+            localStorage.setItem('car_id', JSON.stringify(id));
+            $("#steper").steps('next');
+            getCarAndTour();
+         })
       }
    }
 
@@ -146,7 +223,7 @@ $(document).ready(() => {
    function initMounth() {
       var month = ["January","February","March","April","May","June","July",
       "August","September","October","November","December"].forEach((elem, index) => {
-            let option = `<option value='${index+1}'>${elem}</option>`;
+            let option = `<option value='${getZerro(index+1)}'>${elem}</option>`;
           $('.scond-step-form #month').append(option);
       })
     }
@@ -157,14 +234,11 @@ $(document).ready(() => {
       const days = daysInMonth(month);
       console.log(days);
       for(i=1; i<days; i++) {
-         let option = `<option value='${i}'>${i}</option>`;
+         let option = `<option value='${getZerro(i)}'>${getZerro(i)}</option>`;
          $('.scond-step-form #date').append(option);
       }
     })
 
-    function initDate() {
-      
-    }
 
     function initTime() {
       const hour = 24;
@@ -186,11 +260,93 @@ $(document).ready(() => {
       return new Date(year, month, 0).getDate();
    }
 
-   ///step 2
-   $('.scond-step-form .btn').click(function() {
-      const 
+
+   ///step 2 save data
+   const step2 = $('.scond-step-form');
+   $(step2).find('.btn').click(function() {
+      const year = new Date().getFullYear();
+      const month = step2.find('#month').val();
+      const day = step2.find('#date').val();
+      const hour = step2.find('#hour').val();
+      const minute = step2.find('#minute').val();
+      const address = step2.find('#step_adress').val();
+      const wishes = step2.find('#wishes').val();
+      const map = $('.second-step .map img').attr('src');
+
+      if(month && day && hour && minute && address) {
+         const datetime = `${year}-${month}-${day} ${hour}:${minute}`
+         localStorage.setItem('datetime', datetime);
+         localStorage.setItem('address', address);
+         localStorage.setItem('map', map);
+         localStorage.setItem('wishes', wishes);
+
+         $("#steper").steps('next');
+
+      }
+      else {
+         alert('Не все поля заполнены');
+      }
    })
-  
+
+
+  function getCarAndTour() {
+      findTour();
+      findCar();
+   }
+
+   ///step 5 
+   async function findTour () {
+      const tours =  await get('/winery-tours');
+      wine_tours = JSON.parse(localStorage.getItem('wine_tours'));
+      const tour = tours.find(t => t.id == wine_tours[0]);
+      const template = $('.steper-selected .template').clone();      
+      const item = template.removeClass('template');
+
+      console.log(tour)
+      item.find('.head').html(tour.name);
+      item.find('.desc').html(tour.description);
+      item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
+      item.attr('data-id', tour.id);
+      $('.steper-selected').append(item);
+
+      item.find('.btn.change').click(function()  {
+         $("#steper").steps('setStep', 0)
+      });
+
+      item.find('.close').click(function() {
+         const id = $(this).parents('.item').data('id');
+         removeTour(id)
+      })
+      console.log(item)
+   }
+
+
+   
+   async function findCar () {
+      const cars =  await get('/car-groups');
+
+      car_id = JSON.parse(localStorage.getItem('car_id'));
+      const car = cars.find(t => t.id == car_id);
+      const template = $('.steper-selected .template').clone();      
+      const item = template.removeClass('template');
+
+      console.log(car)
+      item.find('.head').html(car.name);
+      item.find('.desc').html(car.description);
+      item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
+      item.attr('data-id', car.id);
+      $('.steper-selected').append(item);
+
+      item.find('.btn.change').click(function()  {
+         $("#steper").steps('setStep', 3)
+      });
+
+      item.find('.close').click(function() {
+         const id = $(this).parents('.item').data('id');
+         removeTour(id)
+      })
+      console.log(item)
+   }
 
    function getZerro(number) {
       return number > 9 ? number: '0' + number;
@@ -229,5 +385,20 @@ $(document).ready(() => {
         })
       })
     }
+
+
+    //go  to spec step "$("#steper").steps('setStep', step)"
+    $.fn.steps.setStep = function (step) {
+      var currentIndex = $(this).steps('getCurrentIndex');
+      for(var i = 0; i < Math.abs(step - currentIndex); i++){
+        if(step > currentIndex) {
+          $(this).steps('next');
+        }
+        else{
+          $(this).steps('previous');
+        }
+      } 
+    };
+
 })
 

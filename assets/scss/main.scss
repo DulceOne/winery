@@ -345,7 +345,7 @@ main {
 }
 
 .full-wrapper {
-	background-image: url('../image/configurator/steper_bg.png');
+	background-image: url('../image/configurator/steper_bg.jpg');
 	background-size: cover;
 	min-height: 100vh;
 	.configurator {
@@ -385,6 +385,7 @@ main {
 					justify-content: space-between;
 					background-color: white;
 					transition: 1s all;
+					position: relative;
 					&:hover {
 						-webkit-box-shadow: 1px 21px 18px 0px rgba(0,0,0,0.75);
 						-moz-box-shadow: 1px 21px 18px 0px rgba(0,0,0,0.75);
@@ -395,6 +396,32 @@ main {
 					}
 					&.template {
 						display: none;
+					}
+					.close {
+						position: absolute;
+						width: 3vw;
+						right: .7vw;
+						top: .7vw;
+						display: none;
+					}
+					&.selected {
+						::after {
+							content: '';
+							height: 100%;
+							width: 100%;
+							top: 0px;
+							left: 0px;
+							position: absolute;
+							background-color: #dddddd;
+							opacity: 0.09;
+							cursor: no-drop;
+						}
+
+						.close {
+							display: block;
+							z-index: 999999;
+							cursor: pointer;
+						}
 					}
 					&.form {
 						background-color: transparent;
@@ -572,40 +599,46 @@ main {
 			.fourth-step {
 				display: flex;
 				flex-wrap: wrap;
-				.galery {
-					width: 700px;
-					padding-left: 45px;
-					box-sizing: border-box;
-					img {
-
+				.item {
+					display: flex;
+					&.template {
+						display: none;
 					}
-				}
-				.info {
-					width: 470px;
-					position: relative;
-					.title {
-						font-weight: bold;
-						font-size: 24px;
-					}
+					.galery {
+						width: 700px;
+						padding-left: 45px;
+						box-sizing: border-box;
+						img {
 	
-					.desc {
-						font-weight: normal;
-						font-size: 16px;
-						margin-top: 15px;
+						}
 					}
-	
-					.btns {
-						display: flex;
-						justify-content: space-between;
-						position: absolute;
-						width: 100%;
-						bottom: 0px;
-						left: 0px;
-						.btn {
-							width: 48%;
-							&:nth-child(1) {
-								background: transparent;
-								color: #FF391E;
+					.info {
+						width: 470px;
+						position: relative;
+						.title {
+							font-weight: bold;
+							font-size: 24px;
+						}
+		
+						.desc {
+							font-weight: normal;
+							font-size: 16px;
+							margin-top: 15px;
+						}
+		
+						.btns {
+							display: flex;
+							justify-content: space-between;
+							position: absolute;
+							width: 100%;
+							bottom: 0px;
+							left: 0px;
+							.btn {
+								width: 48%;
+								&:nth-child(1) {
+									background: transparent;
+									color: #FF391E;
+								}
 							}
 						}
 					}
