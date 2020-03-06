@@ -9,7 +9,7 @@ $(document).ready(() => {
    }
 
    //settings
-   const host = 'http://192.168.0.101:8000/';
+   const host = 'http://192.168.0.107:8000/';
    const prefix = 'api';
    const fullURL = host+prefix;
    const currentUrl = document.location.pathname;
@@ -17,6 +17,7 @@ $(document).ready(() => {
    const googleMapApiKey = 'AIzaSyBaLQk4NkHI501VkJgj5g3KJXO1TZMlLvA';
    const win_tours = [];
    const win_cars = [];
+   let fullPrice = 0;
 
    drowLineToMenuItem();
 	if(currentUrl == "/winery/index.php" || currentUrl == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
@@ -81,11 +82,14 @@ $(document).ready(() => {
   });
 
 
+//   $('.template').parents('.owl-item').css({'display': 'none'});
+
   //get all Tours
    getAllToursInConfigurato();
    async function getAllToursInConfigurato () {
       const tours =  await get('/winery-tours');
-
+      const selected_tours = localStorage.getItem('wine_tours') || []
+      console.log(tours)
       for(tour of tours) {
          const template = $('.steper-tours .template').clone();      
          const item = template.removeClass('template');
@@ -93,6 +97,10 @@ $(document).ready(() => {
          item.find('.desc').html(tour.description);
          item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
          item.attr('data-id', tour.id);
+         for(stour of selected_tours) {
+            if(stour == tour.id)
+               item.addClass('selected');
+         }
          $('.steper-tours').append(item);
 
          item.find('.btn.select').click(function()  {
@@ -105,6 +113,20 @@ $(document).ready(() => {
             removeTour(id)
          })
       }
+      $("#step-tours-slider").owlCarousel(
+         {
+             items: 4,
+             margin: 0,
+             dots: true,
+             autoplay: true,
+            //  loop: true,
+             lazyLoad: true
+         }
+     );
+
+       //hide template item in slider
+       $('#step-tours-slider .owl-item')[0].remove()
+
    }
 
 
@@ -141,19 +163,6 @@ $(document).ready(() => {
 
    }
 
-   // getAllTours();
-   // async function getAllTours () {
-   //    const tours =  await get('/winery-tours');
-   //    const template = $('.tours .items .template').clone();
-   //    const item = template.removeClass('template');
-   //    for(tour of tours) {
-   //       item.find('.title').html(tour.name);
-   //       item.find('.desc+').html(tour.description);
-   //       item.find('img').attr('src',host+tour.photos[0].default);
-   //       item.attr('data-id', tour.id);
-   //       $('.tours .items').append(item);
-   //    }
-   // }
 
    getAllCarsGroupConfigurator();
    async function getAllCarsGroupConfigurator() {
@@ -170,13 +179,27 @@ $(document).ready(() => {
 
          item.find('.btn.select').click(function()  {
             const id = $(this).parents('.item').data('id');
-            // localStorage.setItem('car_id', JSON.stringify(id));
             get(`/car-groups/${id}`).then((cars) => {
                $("#steper").steps('next');
                drawCars(cars)
             })
          });
       }
+
+      $("#step-cars-slider").owlCarousel(
+         {
+             items: 4,
+             margin: 0,
+             dots: true,
+             autoplay: true,
+            //  loop: true,
+             lazyLoad: true
+         }
+     );
+
+       //hide template item in slider
+       console.log($('.owl-item'))
+      $('#step-cars-slider .owl-item')[0].remove()
    }
 
 
@@ -186,6 +209,11 @@ $(document).ready(() => {
          const template = $('.fourth-step .template').clone();
          const item = template.removeClass('template');
          item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
+         // let index = 0;
+         // setInterval(function() {
+         //    item.find('.galery img').attr('src', host + car.photos[index]['configurator-card']);
+         //    index++;
+         // }, 2000)
          item.find('.info .title').html(car.name);
          item.find('.desc').html(car.description);
          item.attr('data-id', car.id);
@@ -198,6 +226,21 @@ $(document).ready(() => {
             getCarAndTour();
          })
       }
+
+      $("#step-car-slider").owlCarousel(
+         {
+             items: 1,
+             margin: 0,
+             dots: true,
+             autoplay: true,
+             loop: true,
+             lazyLoad: true
+         }
+     );
+
+       //hide template item in slider
+       console.log($('.owl-item'))
+      $('#step-car-slider .owl-item')[0].css({'display':'none'})
    }
 
    //Draw Map
@@ -275,6 +318,8 @@ $(document).ready(() => {
 
       if(month && day && hour && minute && address) {
          const datetime = `${year}-${month}-${day} ${hour}:${minute}`
+         localStorage.setItem('date', day +' '+ month)
+         localStorage.setItem('time', hour +':'+ minute)
          localStorage.setItem('datetime', datetime);
          localStorage.setItem('address', address);
          localStorage.setItem('map', map);
@@ -291,6 +336,7 @@ $(document).ready(() => {
 
   function getCarAndTour() {
       findTour();
+      wishlistMapDraw();
       findCar();
    }
 
@@ -301,56 +347,99 @@ $(document).ready(() => {
       const tour = tours.find(t => t.id == wine_tours[0]);
       const template = $('.steper-selected .template').clone();      
       const item = template.removeClass('template');
-
-      console.log(tour)
       item.find('.head').html(tour.name);
       item.find('.desc').html(tour.description);
       item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
+      item.find('.price').html(`${tour.price}$`);
       item.attr('data-id', tour.id);
-      $('.steper-selected').append(item);
+      $('.steper-selected .form').before(item);
+
+      setTotalPrice(tour.price)
+
 
       item.find('.btn.change').click(function()  {
          $("#steper").steps('setStep', 0)
       });
-
-      item.find('.close').click(function() {
-         const id = $(this).parents('.item').data('id');
-         removeTour(id)
-      })
-      console.log(item)
    }
 
+   async function wishlistMapDraw() {
+      const address = localStorage.getItem('address');
+      const price = await get(`/distance?target=${address}`);
+      const map = localStorage.getItem('map');
+      const date = localStorage.getItem('date');
+      const time = localStorage.getItem('time');
+      const wishes = localStorage.getItem('wishes');
+
+      const template = $('.steper-selected .template').clone();      
+      const item = template.removeClass('template');
+      item.find('.head').html(address);
+      item.find('.desc').html(
+         `Address: ${address}
+         <br>
+         Date: ${date}
+         <br>
+         Time: ${time}
+         <br>
+         Wishes: ${wishes}
+      `);
+      item.find('.wrapper img').attr('src',map);
+      item.find('.price').html(`${price.price}$`);
+      item.attr('data-id', car.id);
+      $('.steper-selected .form').before(item);
+      setTotalPrice(price.price)
+
+      item.find('.btn.change').click(function()  {
+         $("#steper").steps('setStep', 1)
+      });
+
+   }
 
    
    async function findCar () {
-      const cars =  await get('/car-groups');
+      const cars =  await get('/cars');
 
       car_id = JSON.parse(localStorage.getItem('car_id'));
-      const car = cars.find(t => t.id == car_id);
+      const car = cars.data.find(t => t.id == car_id);
       const template = $('.steper-selected .template').clone();      
       const item = template.removeClass('template');
-
-      console.log(car)
       item.find('.head').html(car.name);
       item.find('.desc').html(car.description);
-      item.find('.wrapper img').attr('src',host+tour.photos[0]['configurator-card']);
+      item.find('.price').html(`${car.price}$`);
+      item.find('.wrapper img').attr('src',host+car.photos[0]['configurator-card']);
+
       item.attr('data-id', car.id);
-      $('.steper-selected').append(item);
+      $('.steper-selected .form').before(item);
 
       item.find('.btn.change').click(function()  {
          $("#steper").steps('setStep', 3)
       });
 
-      item.find('.close').click(function() {
-         const id = $(this).parents('.item').data('id');
-         removeTour(id)
-      })
+      setTotalPrice(car.price)
       console.log(item)
    }
 
    function getZerro(number) {
       return number > 9 ? number: '0' + number;
    }
+
+   const step5Form = $('.steper-selected .item.form');
+   step5Form.find('.btn').click(() => {
+      body = {
+         fullName: step5Form.find('#name').val(),
+         phoneNumber: step5Form.find('#phone').val(),
+         email: step5Form.find('#email').val(),
+         addressWishes: localStorage.getItem('wishes'),
+         wishes: step5Form.find('#wishes').val(),
+         address: localStorage.getItem('address'),
+         datetime: localStorage.getItem('datetime')+':00',
+         car_id: localStorage.getItem('car_id'),
+         wine_tours_ids: JSON.parse(localStorage.getItem('wine_tours')),
+         address_price: '123'
+      }
+      post('/place-an-order', body).then(res => {
+         console.log(res)
+      })
+   })
 
 
 
@@ -369,6 +458,13 @@ $(document).ready(() => {
            },
          })
        })
+   }
+
+   function setTotalPrice(price) {
+      let oldPrice = $('.steper-selected form .price span');
+      fullPrice += price;
+      oldPrice.html(fullPrice);
+   
    }
   
    function get(url) {

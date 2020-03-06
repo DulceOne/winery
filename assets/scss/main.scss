@@ -356,6 +356,13 @@ main {
 
 		#steper {
 
+			.owl-stage {
+				height: 100%;
+				.owl-item {
+					height: 100%;
+				}
+			}
+
 			.steps {
 				display: none;
 			}
@@ -482,6 +489,7 @@ main {
 					.wrapper {
 						img {
 							max-height: 25vh;
+							height: 100%;
 							margin: auto;
 							width: 20vw;
 						}
@@ -605,16 +613,17 @@ main {
 						display: none;
 					}
 					.galery {
-						width: 700px;
-						padding-left: 45px;
+						width: 40vw;
+						padding-left: 10vw;
 						box-sizing: border-box;
 						img {
-	
+							width: 100%;
 						}
 					}
 					.info {
-						width: 470px;
+						width: 40vw;
 						position: relative;
+						margin-left: 5vw;
 						.title {
 							font-weight: bold;
 							font-size: 24px;

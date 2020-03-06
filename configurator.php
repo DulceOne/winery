@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<? include './shared/links.php'?>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/owl/owl.carousel.min.js"></script>
+    <script src="./assets/js/slider.js"></script>
 </head>
 <body>
 	<section class="full-wrapper">
@@ -24,7 +27,7 @@
 						</div>
 						<div class="current-page">Step 1 with 5 </div>
 					</div>
-					<div class="steper-tours">
+					<div class="steper-tours owl-carousel" id="step-tours-slider">
 
 						<div class="item template">
 							<img class="close " src="./assets/image/configurator/close.svg" alt="">
@@ -128,7 +131,7 @@
 						</div>
 						<div class="current-page">Step 3 with 5 </div>
 					</div>
-					<div class="steper-cars">
+					<div class="steper-cars owl-carousel" id="step-cars-slider">
 						
 
 						
@@ -160,19 +163,20 @@
 				</section>
 				<h3></h3>
 				<section id="fourth-step">
-					<div class="fourth-step">
 
-						<div class="header">
-							<div class="title">
-								select you class Car
-								<div class="ui-line orange"></div>
-							</div>
-							<div class="controls">
-								<img src="./assets/image/home/arrow_left.png" alt="">
-								<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
-							</div>
-							<div class="current-page">Step 4 with 5 </div>
+					<div class="header">
+						<div class="title">
+							select you Car
+							<div class="ui-line orange"></div>
 						</div>
+						<div class="controls">
+							<img src="./assets/image/home/arrow_left.png" alt="">
+							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+						</div>
+						<div class="current-page">Step 4 with 5 </div>
+					</div>
+					<div class="fourth-step owl-carousel" id="step-car-slider">
+					
 						<div class="item template">
 							<div class="galery">
 								<img src="./assets/image/configurator/car.png" alt="">
@@ -224,7 +228,7 @@
 								</div>
 							</div>
 							<div class="controls">
-								<div class="btn white">500$</div>
+								<div class="btn white price">500$</div>
 								<div class="btn change">Change</div>
 							</div>
 						</div>
@@ -235,24 +239,21 @@
 								<form>
 									<div class="item-form">
 										<div class="title">Name</div>
-										<input type="text">
+										<input type="text" id="name">
 									</div>
 									<div class="item-form">
 										<div class="title">Phone</div>
-										<input type="text">
+										<input type="text" id="phone">
 									</div>
 									<div class="item-form">
 										<div class="title">E-mail</div>
-										<input type="text">
+										<input type="text" id="email">
 									</div>
 									<div class="item-form">
 										<div class="title">Wishes</div>
-										<textarea disabled>Lorem ipsum dolor sit amet, consectetur
-										 adipisicing elit. Maiores sint porro ad odio quae repellat similique? Quaerat quia,
-										  sit atque ex iusto, culpa fuga aliquid reprehenderit ipsum, ipsam alias? Non.
-										</textarea>
+										<textarea id="wishes"></textarea>
 									</div>
-									<div class="price">total price <span>1800$</span</div>
+									<div class="price">total price <span></span>$</div>
 								</form>
 								</div>
 								<div class="controls">
