@@ -9,7 +9,8 @@ $(document).ready(() => {
    }
 
    //settings
-   const host = 'http://192.168.0.107:8000/';
+   // const host = 'http://192.168.0.107:8000/';
+   const host = 'http://178.136.180.110:8000/';
    const prefix = 'api';
    const fullURL = host+prefix;
    const currentUrl = document.location.pathname;
@@ -18,6 +19,7 @@ $(document).ready(() => {
    const win_tours = [];
    const win_cars = [];
    let fullPrice = 0;
+   let sliderInit = false;
 
    drowLineToMenuItem();
 	if(currentUrl == "/winery/index.php" || currentUrl == "/winery") { //toDo когда зальем на сервак нужно будет сменить домен стринг
@@ -181,7 +183,14 @@ $(document).ready(() => {
             const id = $(this).parents('.item').data('id');
             get(`/car-groups/${id}`).then((cars) => {
                $("#steper").steps('next');
-               drawCars(cars)
+               if(!sliderInit) {
+                  drawCars(cars);
+                  sliderInit = true;
+               }
+               else {
+                  sliderRefresh($('.fourth-step'), cars)
+               }
+               sliderClear($('#step-car-slider'));
             })
          });
       }
@@ -203,12 +212,55 @@ $(document).ready(() => {
    }
 
 
+   function sliderRefresh(slider, data) {
+      alert('slider refresh')
+      let items = '';
+      $(slider).find('.item').each((index, e) => $(slider).trigger('remove.owl.carousel', index));
+      let a = 0;
+      for(car of data) {
+         const template = $('.fourth-step .template').clone().eq(0);
+
+         let item = template.removeClass('template');
+         if(car.photos.length)
+            item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
+         // let index = 0;
+         // setInterval(function() {
+         //    item.find('.galery img').attr('src', host + car.photos[index]['configurator-card']);
+         //    index++;
+         // }, 2000)
+         item.find('.info .title').html(car.name);
+         item.find('.desc').html(car.description);
+         item.attr('data-id', car.id);
+
+         item.find('.btn.select').click(function () {
+            const id = $(this).parents('.item').data('id');
+            localStorage.setItem('car_id', JSON.stringify(id));
+            $("#steper").steps('next');
+            getCarAndTour();
+         })
+         $(slider).trigger('add.owl.carousel', [item, a++]);
+
+      }
+   }
+   function sliderClear($owl) {
+      // $owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
+      // $owl.find('.owl-stage-outer').children().unwrap();
+      // $owl.find('.owl-stage-outer').remove();
+      // $owl.find('.owl-nav').remove();
+      // $owl.find('.owl-dots').remove();
+      // $owl.removeClass('owl-loaded');
+      // $owl.removeClass('owl-drag');
+   }
+
    function drawCars(cars) {
+      alert('slider init')
+
       $('.fourth-step .item').not('.template').remove();
       for(car of cars) {
          const template = $('.fourth-step .template').clone();
          const item = template.removeClass('template');
-         item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
+         if(car.photos.length)
+            item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
          // let index = 0;
          // setInterval(function() {
          //    item.find('.galery img').attr('src', host + car.photos[index]['configurator-card']);
@@ -240,7 +292,7 @@ $(document).ready(() => {
 
        //hide template item in slider
        console.log($('.owl-item'))
-      $('#step-car-slider .owl-item')[0].css({'display':'none'})
+      // $('#step-car-slider .owl-item')[0].css({'display':'none'})
    }
 
    //Draw Map
@@ -342,6 +394,7 @@ $(document).ready(() => {
 
    ///step 5 
    async function findTour () {
+      console.log('findTour')
       const tours =  await get('/winery-tours');
       wine_tours = JSON.parse(localStorage.getItem('wine_tours'));
       const tour = tours.find(t => t.id == wine_tours[0]);
@@ -363,6 +416,7 @@ $(document).ready(() => {
    }
 
    async function wishlistMapDraw() {
+      console.log('wishlistMapDraw')
       const address = localStorage.getItem('address');
       const price = await get(`/distance?target=${address}`);
       const map = localStorage.getItem('map');
@@ -396,6 +450,7 @@ $(document).ready(() => {
 
    
    async function findCar () {
+      console.log('findCar')
       const cars =  await get('/cars');
 
       car_id = JSON.parse(localStorage.getItem('car_id'));
