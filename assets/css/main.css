@@ -384,35 +384,84 @@ main .contacts .wrapper .info .soc {
   background-size: cover;
   min-height: 100vh;
 }
-/* line 351, ../scss/main.scss */
+/* line 352, ../scss/main.scss */
+.full-wrapper .popup {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 999999999;
+}
+/* line 361, ../scss/main.scss */
+.full-wrapper .popup .wrapper {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  padding-top: 50px;
+}
+/* line 366, ../scss/main.scss */
+.full-wrapper .popup .wrapper .title, .full-wrapper .popup .wrapper .thx {
+  font-size: 26px;
+  text-align: center;
+  color: #FF391E;
+  font-weight: bold;
+}
+/* line 372, ../scss/main.scss */
+.full-wrapper .popup .wrapper .thx {
+  margin-top: 25px;
+}
+/* line 375, ../scss/main.scss */
+.full-wrapper .popup .wrapper .info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 380, ../scss/main.scss */
+.full-wrapper .popup .wrapper .btn {
+  margin-top: 58px;
+  display: block;
+}
+/* line 386, ../scss/main.scss */
 .full-wrapper .configurator {
   width: 99vw;
   height: calc(100vh - 105px);
   margin: auto;
   box-sizing: border-box;
 }
-/* line 359, ../scss/main.scss */
+/* line 393, ../scss/main.scss */
+.full-wrapper .configurator #steper .actions {
+  display: none;
+}
+/* line 397, ../scss/main.scss */
+.full-wrapper .configurator #steper .first-step-next {
+  width: 20vw;
+  margin: auto;
+}
+/* line 401, ../scss/main.scss */
 .full-wrapper .configurator #steper .owl-stage {
   height: 100%;
 }
-/* line 361, ../scss/main.scss */
+/* line 403, ../scss/main.scss */
 .full-wrapper .configurator #steper .owl-stage .owl-item {
   height: 100%;
 }
-/* line 366, ../scss/main.scss */
+/* line 408, ../scss/main.scss */
 .full-wrapper .configurator #steper .steps {
   display: none;
 }
-/* line 369, ../scss/main.scss */
+/* line 411, ../scss/main.scss */
 .full-wrapper .configurator #steper .header {
   padding-left: 5vw;
   box-sizing: border-box;
 }
-/* line 372, ../scss/main.scss */
+/* line 414, ../scss/main.scss */
 .full-wrapper .configurator #steper .header .title {
-  font-size: 1.5vw !important;
+  font-size: 1.5vw;
 }
-/* line 376, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours, .full-wrapper .configurator #steper .steper-cars, .full-wrapper .configurator #steper .steper-selected {
   display: flex;
   width: 100%;
@@ -421,11 +470,11 @@ main .contacts .wrapper .info .soc {
   padding-left: 5vw;
   box-sizing: border-box;
 }
-/* line 383, ../scss/main.scss */
+/* line 425, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .header, .full-wrapper .configurator #steper .steper-cars .header, .full-wrapper .configurator #steper .steper-selected .header {
   padding-left: 5vw;
 }
-/* line 386, ../scss/main.scss */
+/* line 428, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item, .full-wrapper .configurator #steper .steper-cars .item, .full-wrapper .configurator #steper .steper-selected .item {
   width: 20vw;
   max-height: 65vh;
@@ -437,21 +486,21 @@ main .contacts .wrapper .info .soc {
   transition: 1s all;
   position: relative;
 }
-/* line 396, ../scss/main.scss */
+/* line 438, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item:hover, .full-wrapper .configurator #steper .steper-cars .item:hover, .full-wrapper .configurator #steper .steper-selected .item:hover {
   -webkit-box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 1px 21px 18px 0px rgba(0, 0, 0, 0.75);
 }
-/* line 401, ../scss/main.scss */
+/* line 443, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item:nth-child(n+2), .full-wrapper .configurator #steper .steper-cars .item:nth-child(n+2), .full-wrapper .configurator #steper .steper-selected .item:nth-child(n+2) {
   margin-left: 30px;
 }
-/* line 404, ../scss/main.scss */
+/* line 446, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.template, .full-wrapper .configurator #steper .steper-cars .item.template, .full-wrapper .configurator #steper .steper-selected .item.template {
   display: none;
 }
-/* line 407, ../scss/main.scss */
+/* line 449, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .close, .full-wrapper .configurator #steper .steper-cars .item .close, .full-wrapper .configurator #steper .steper-selected .item .close {
   position: absolute;
   width: 3vw;
@@ -459,7 +508,7 @@ main .contacts .wrapper .info .soc {
   top: .7vw;
   display: none;
 }
-/* line 415, ../scss/main.scss */
+/* line 457, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.selected ::after, .full-wrapper .configurator #steper .steper-cars .item.selected ::after, .full-wrapper .configurator #steper .steper-selected .item.selected ::after {
   content: '';
   height: 100%;
@@ -471,22 +520,22 @@ main .contacts .wrapper .info .soc {
   opacity: 0.09;
   cursor: no-drop;
 }
-/* line 427, ../scss/main.scss */
+/* line 469, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.selected .close, .full-wrapper .configurator #steper .steper-cars .item.selected .close, .full-wrapper .configurator #steper .steper-selected .item.selected .close {
   display: block;
   z-index: 999999;
   cursor: pointer;
 }
-/* line 433, ../scss/main.scss */
+/* line 475, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form, .full-wrapper .configurator #steper .steper-cars .item.form, .full-wrapper .configurator #steper .steper-selected .item.form {
   background-color: transparent;
   justify-content: start;
 }
-/* line 436, ../scss/main.scss */
+/* line 478, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form:hover, .full-wrapper .configurator #steper .steper-cars .item.form:hover, .full-wrapper .configurator #steper .steper-selected .item.form:hover {
   box-shadow: none;
 }
-/* line 439, ../scss/main.scss */
+/* line 481, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .item-title, .full-wrapper .configurator #steper .steper-cars .item.form .item-title, .full-wrapper .configurator #steper .steper-selected .item.form .item-title {
   font-weight: 500;
   font-size: 16px;
@@ -496,23 +545,23 @@ main .contacts .wrapper .info .soc {
   text-align: center;
   margin-bottom: 45px;
 }
-/* line 448, ../scss/main.scss */
+/* line 490, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* line 454, ../scss/main.scss */
+/* line 496, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form {
   margin-top: 10px;
 }
-/* line 456, ../scss/main.scss */
+/* line 498, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form .title, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form .title, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form .title {
   color: #FF391E;
   font-size: 12px;
 }
-/* line 460, ../scss/main.scss */
+/* line 502, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form input, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form textarea {
   border: none;
   outline: none;
@@ -523,11 +572,11 @@ main .contacts .wrapper .info .soc {
   height: 20px;
   resize: none;
 }
-/* line 470, ../scss/main.scss */
+/* line 512, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .item-form textarea, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .item-form textarea {
   height: 50px;
 }
-/* line 474, ../scss/main.scss */
+/* line 516, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .price, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .price, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .price {
   font-weight: 500;
   font-size: 16px;
@@ -537,80 +586,80 @@ main .contacts .wrapper .info .soc {
   margin-top: 25px;
   text-transform: uppercase;
 }
-/* line 482, ../scss/main.scss */
+/* line 524, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item.form .wrapper form .price span, .full-wrapper .configurator #steper .steper-cars .item.form .wrapper form .price span, .full-wrapper .configurator #steper .steper-selected .item.form .wrapper form .price span {
   color: #FF391E;
 }
-/* line 490, ../scss/main.scss */
+/* line 532, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper img, .full-wrapper .configurator #steper .steper-cars .item .wrapper img, .full-wrapper .configurator #steper .steper-selected .item .wrapper img {
   max-height: 25vh;
   height: 100%;
   margin: auto;
   width: 20vw;
 }
-/* line 496, ../scss/main.scss */
+/* line 538, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info {
   padding: 10px 15px;
 }
-/* line 498, ../scss/main.scss */
+/* line 540, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info .head, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info .head, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info .head {
   font-weight: 500;
   font-size: 1vw;
   line-height: 19px;
   text-transform: uppercase;
 }
-/* line 504, ../scss/main.scss */
+/* line 546, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .wrapper .info .desc, .full-wrapper .configurator #steper .steper-cars .item .wrapper .info .desc, .full-wrapper .configurator #steper .steper-selected .item .wrapper .info .desc {
   font-size: .9vw;
   line-height: 1vw;
   letter-spacing: 0.05em;
   margin-top: .5vw;
 }
-/* line 513, ../scss/main.scss */
+/* line 555, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls, .full-wrapper .configurator #steper .steper-cars .item .controls, .full-wrapper .configurator #steper .steper-selected .item .controls {
   display: flex;
   width: 100%;
 }
-/* line 516, ../scss/main.scss */
+/* line 558, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls .btn, .full-wrapper .configurator #steper .steper-cars .item .controls .btn, .full-wrapper .configurator #steper .steper-selected .item .controls .btn {
   width: 100%;
 }
-/* line 518, ../scss/main.scss */
+/* line 560, ../scss/main.scss */
 .full-wrapper .configurator #steper .steper-tours .item .controls .btn.white, .full-wrapper .configurator #steper .steper-cars .item .controls .btn.white, .full-wrapper .configurator #steper .steper-selected .item .controls .btn.white {
   color: #FF391E;
 }
-/* line 526, ../scss/main.scss */
+/* line 568, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 529, ../scss/main.scss */
+/* line 571, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .map {
   width: 55vw;
   margin-left: 1vw;
 }
-/* line 532, ../scss/main.scss */
+/* line 574, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .map img {
   width: 100%;
   border: 2px solid rgba(0, 0, 0, 0.3);
 }
-/* line 537, ../scss/main.scss */
+/* line 579, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form {
   width: 25vw;
   position: relative;
   box-sizing: border-box;
   margin-left: 5vw;
 }
-/* line 542, ../scss/main.scss */
+/* line 584, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item {
   margin-top: 25px;
 }
-/* line 544, ../scss/main.scss */
+/* line 586, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item .title {
   color: #FF391E;
   font-size: 18px;
 }
-/* line 548, ../scss/main.scss */
+/* line 590, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .item input {
   border: none;
   outline: none;
@@ -620,26 +669,26 @@ main .contacts .wrapper .info .soc {
   width: 100%;
   height: 35px;
 }
-/* line 559, ../scss/main.scss */
+/* line 601, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 563, ../scss/main.scss */
+/* line 605, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item {
   width: 12vw;
   font-size: 1vw;
 }
-/* line 566, ../scss/main.scss */
+/* line 608, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .title {
   color: #FF391E;
 }
-/* line 569, ../scss/main.scss */
+/* line 611, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper {
   position: relative;
 }
-/* line 571, ../scss/main.scss */
+/* line 613, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper::before {
   content: '';
   height: 10px;
@@ -650,7 +699,7 @@ main .contacts .wrapper .info .soc {
   right: 15px;
   z-index: 1;
 }
-/* line 581, ../scss/main.scss */
+/* line 623, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .date-block .item .wrapper select {
   border: none;
   width: 100%;
@@ -663,7 +712,7 @@ main .contacts .wrapper .info .soc {
   font-size: 1vw;
   margin-top: .5vw;
 }
-/* line 597, ../scss/main.scss */
+/* line 639, ../scss/main.scss */
 .full-wrapper .configurator #steper .second-step .scond-step-form .btn {
   position: absolute;
   bottom: 0px;
@@ -671,47 +720,47 @@ main .contacts .wrapper .info .soc {
   right: 0px;
   box-sizing: border-box;
 }
-/* line 607, ../scss/main.scss */
+/* line 649, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step {
   display: flex;
   flex-wrap: wrap;
 }
-/* line 610, ../scss/main.scss */
+/* line 652, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item {
   display: flex;
 }
-/* line 612, ../scss/main.scss */
+/* line 654, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item.template {
   display: none;
 }
-/* line 615, ../scss/main.scss */
+/* line 657, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .galery {
   width: 40vw;
   padding-left: 10vw;
   box-sizing: border-box;
 }
-/* line 619, ../scss/main.scss */
+/* line 661, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .galery img {
   width: 100%;
 }
-/* line 623, ../scss/main.scss */
+/* line 665, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info {
   width: 40vw;
   position: relative;
   margin-left: 5vw;
 }
-/* line 627, ../scss/main.scss */
+/* line 669, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info .title {
   font-weight: bold;
   font-size: 24px;
 }
-/* line 632, ../scss/main.scss */
+/* line 674, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info .desc {
   font-weight: normal;
   font-size: 16px;
   margin-top: 15px;
 }
-/* line 638, ../scss/main.scss */
+/* line 680, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info .btns {
   display: flex;
   justify-content: space-between;
@@ -720,17 +769,21 @@ main .contacts .wrapper .info .soc {
   bottom: 0px;
   left: 0px;
 }
-/* line 645, ../scss/main.scss */
+/* line 687, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info .btns .btn {
   width: 48%;
 }
-/* line 647, ../scss/main.scss */
+/* line 689, ../scss/main.scss */
 .full-wrapper .configurator #steper .fourth-step .item .info .btns .btn:nth-child(1) {
   background: transparent;
   color: #FF391E;
 }
+/* line 699, ../scss/main.scss */
+.full-wrapper .configurator #steper .template {
+  display: none;
+}
 
-/* line 665, ../scss/main.scss */
+/* line 711, ../scss/main.scss */
 .btn {
   text-align: center;
   background: #FF391E;
@@ -743,45 +796,45 @@ main .contacts .wrapper .info .soc {
   text-decoration: none;
   transition: .3s all;
 }
-/* line 676, ../scss/main.scss */
+/* line 722, ../scss/main.scss */
 .btn.light {
   background: #FFFFFF;
   color: #FF391E;
 }
-/* line 679, ../scss/main.scss */
+/* line 725, ../scss/main.scss */
 .btn.light:hover {
   color: white;
   background-color: #FF391E;
 }
-/* line 685, ../scss/main.scss */
+/* line 731, ../scss/main.scss */
 .btn.white {
   background: transparent;
   color: white;
   border: 2px solid white;
 }
-/* line 690, ../scss/main.scss */
+/* line 736, ../scss/main.scss */
 .btn:hover {
   color: #FF391E;
   background-color: white;
 }
 
-/* line 696, ../scss/main.scss */
+/* line 742, ../scss/main.scss */
 .ui-line {
   position: absolute;
   bottom: -5px;
   left: 0px;
   width: 70px;
 }
-/* line 701, ../scss/main.scss */
+/* line 747, ../scss/main.scss */
 .ui-line.white {
   border-bottom: 2px solid white;
 }
-/* line 705, ../scss/main.scss */
+/* line 751, ../scss/main.scss */
 .ui-line.orange {
   border-bottom: 2px solid #FF391E;
 }
 
-/* line 710, ../scss/main.scss */
+/* line 756, ../scss/main.scss */
 .header {
   width: 100%;
   flex: 100%;
@@ -789,22 +842,266 @@ main .contacts .wrapper .info .soc {
   display: flex;
   align-items: center;
 }
-/* line 716, ../scss/main.scss */
+/* line 762, ../scss/main.scss */
 .header .title {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
 }
-/* line 723, ../scss/main.scss */
+/* line 769, ../scss/main.scss */
 .header .controls {
   margin-left: 15px;
 }
-/* line 727, ../scss/main.scss */
+/* line 773, ../scss/main.scss */
 .header .current-page {
   font-size: 16px;
   color: #7A7A7A;
   text-transform: none;
   font-weight: normal;
   margin-left: 15px;
+}
+
+@media screen and (max-width: 1170px) {
+  /* line 785, ../scss/main.scss */
+  main .informations {
+    width: 100%;
+  }
+  /* line 787, ../scss/main.scss */
+  main .informations .items {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* line 792, ../scss/main.scss */
+  main .informations .items .item .info, main .informations .items .item .galery {
+    width: 100%;
+  }
+  /* line 795, ../scss/main.scss */
+  main .informations .items .item .galery {
+    padding: unset;
+  }
+  /* line 797, ../scss/main.scss */
+  main .informations .items .item .galery .small-size {
+    display: none;
+  }
+  /* line 800, ../scss/main.scss */
+  main .informations .items .item .galery .full-size {
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* line 806, ../scss/main.scss */
+  main .informations .items .item.second .info {
+    padding: unset;
+  }
+  /* line 808, ../scss/main.scss */
+  main .informations .items .item.second .info .btn {
+    bottom: -70px;
+  }
+  /* line 812, ../scss/main.scss */
+  main .informations .items .item.second .galery {
+    padding: unset;
+  }
+  /* line 814, ../scss/main.scss */
+  main .informations .items .item.second .galery .full-size {
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  /* line 825, ../scss/main.scss */
+  main .contacts .wrapper {
+    width: 100%;
+    flex-direction: column;
+  }
+  /* line 828, ../scss/main.scss */
+  main .contacts .wrapper .form-wrap {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* line 832, ../scss/main.scss */
+  main .contacts .wrapper .form-wrap form {
+    width: 100%;
+    border: unset;
+  }
+  /* line 835, ../scss/main.scss */
+  main .contacts .wrapper .form-wrap form input {
+    width: 100%;
+  }
+  /* line 838, ../scss/main.scss */
+  main .contacts .wrapper .form-wrap form .btn {
+    width: 100%;
+  }
+  /* line 844, ../scss/main.scss */
+  main .contacts .wrapper .info {
+    display: none;
+  }
+
+  /* line 852, ../scss/main.scss */
+  .tours .items {
+    width: 100% !important;
+  }
+  /* line 854, ../scss/main.scss */
+  .tours .items .header {
+    padding-left: 15px;
+  }
+  /* line 857, ../scss/main.scss */
+  .tours .items .item {
+    width: 100% !important;
+  }
+  /* line 859, ../scss/main.scss */
+  .tours .items .item .galery, .tours .items .item .info {
+    width: unset !important;
+  }
+  /* line 863, ../scss/main.scss */
+  .tours .items .item .galery img {
+    height: unset !important;
+  }
+  /* line 868, ../scss/main.scss */
+  .tours .items .item .info .btn {
+    width: calc(100% - 30px) !important;
+    bottom: -7vh;
+  }
+
+  /* line 878, ../scss/main.scss */
+  .fleet-view .wrapper {
+    width: 100% !important;
+  }
+  /* line 881, ../scss/main.scss */
+  .fleet-view .wrapper .item .galery {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 886, ../scss/main.scss */
+  .fleet-view .wrapper .item .galery .full-size {
+    width: 100%;
+  }
+  /* line 890, ../scss/main.scss */
+  .fleet-view .wrapper .item .info {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  /* line 899, ../scss/main.scss */
+  .full-wrapper .configurator {
+    height: 100% !important;
+  }
+  /* line 904, ../scss/main.scss */
+  .full-wrapper #steper .header .title {
+    font-size: 3vw !important;
+  }
+  /* line 908, ../scss/main.scss */
+  .full-wrapper #steper .steper-tours, .full-wrapper #steper .steper-cars {
+    padding-left: unset !important;
+  }
+  /* line 911, ../scss/main.scss */
+  .full-wrapper #steper .steper-tours .owl-item .item, .full-wrapper #steper .steper-cars .owl-item .item {
+    width: 100%;
+  }
+  /* line 914, ../scss/main.scss */
+  .full-wrapper #steper .steper-tours .owl-item .item .wrapper img, .full-wrapper #steper .steper-cars .owl-item .item .wrapper img {
+    width: 100%;
+  }
+  /* line 918, ../scss/main.scss */
+  .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .head, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .head {
+    font-size: 3.5vw;
+  }
+  /* line 921, ../scss/main.scss */
+  .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .desc, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .desc {
+    font-size: 3vw;
+  }
+  /* line 932, ../scss/main.scss */
+  .full-wrapper #steper .second-step .map {
+    width: 90% !important;
+    box-sizing: border-box;
+    margin: auto !important;
+  }
+  /* line 937, ../scss/main.scss */
+  .full-wrapper #steper .second-step .scond-step-form {
+    width: 90% !important;
+    margin: auto;
+  }
+  /* line 941, ../scss/main.scss */
+  .full-wrapper #steper .second-step .scond-step-form .date-block .item {
+    width: 100% !important;
+  }
+  /* line 943, ../scss/main.scss */
+  .full-wrapper #steper .second-step .scond-step-form .date-block .item .title {
+    font-size: 4vw !important;
+  }
+  /* line 946, ../scss/main.scss */
+  .full-wrapper #steper .second-step .scond-step-form .date-block .item select {
+    font-size: 3vw !important;
+  }
+  /* line 952, ../scss/main.scss */
+  .full-wrapper #steper .second-step .scond-step-form .btn {
+    bottom: -10vh !important;
+  }
+  /* line 960, ../scss/main.scss */
+  .full-wrapper .steper-selected {
+    padding-left: unset !important;
+    flex-direction: column;
+    height: unset !important;
+    padding-bottom: 4vh;
+  }
+  /* line 965, ../scss/main.scss */
+  .full-wrapper .steper-selected .item {
+    width: 90% !important;
+    margin: auto !important;
+  }
+  /* line 969, ../scss/main.scss */
+  .full-wrapper .steper-selected .item .wrapper img {
+    width: 100% !important;
+  }
+  /* line 972, ../scss/main.scss */
+  .full-wrapper .steper-selected .item .wrapper .info {
+    min-height: 20vh;
+  }
+  /* line 974, ../scss/main.scss */
+  .full-wrapper .steper-selected .item .wrapper .info .head {
+    font-size: 4vw !important;
+  }
+  /* line 977, ../scss/main.scss */
+  .full-wrapper .steper-selected .item .wrapper .info .desc {
+    font-size: 3vw !important;
+    line-height: unset !important;
+  }
+  /* line 983, ../scss/main.scss */
+  .full-wrapper .steper-selected .item:nth-child(n+2) {
+    margin-top: 5vw !important;
+  }
+  /* line 990, ../scss/main.scss */
+  .full-wrapper .fourth-step .item {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 993, ../scss/main.scss */
+  .full-wrapper .fourth-step .item .galery {
+    width: 90% !important;
+    margin: auto;
+    padding: unset !important;
+  }
+  /* line 998, ../scss/main.scss */
+  .full-wrapper .fourth-step .item .info {
+    width: 100% !important;
+    min-height: 20vh;
+  }
+  /* line 1001, ../scss/main.scss */
+  .full-wrapper .fourth-step .item .info .title {
+    font-size: 4vw !important;
+  }
+  /* line 1004, ../scss/main.scss */
+  .full-wrapper .fourth-step .item .info .desc {
+    font-size: 3vw !important;
+  }
+  /* line 1008, ../scss/main.scss */
+  .full-wrapper .fourth-step .item .info .btns {
+    width: 90% !important;
+    margin: auto;
+  }
+  /* line 1015, ../scss/main.scss */
+  .full-wrapper .first-step-next {
+    width: 100% !important;
+  }
 }

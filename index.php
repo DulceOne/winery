@@ -26,10 +26,6 @@
                         about us
                         <div class="ui-line orange"></div>
                     </div>
-                    <div class="controls">
-                        <img src="./assets/image/home/arrow_left.png" alt="">
-                        <img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
-                    </div>
                 </div>
                 <div class="info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt assumenda magni qui nobis placeat quae non quia iure omnis! Quasi, incidunt assumenda. Laborum neque tenetur eum nihil voluptatum. Amet, voluptates.Asperiores amet ea, officia mollitia, deleniti quia molestias exercitationem tempora, est placeat maxime. Molestiae quia placeat perferendis sed, pariatur recusandae et, illum temporibus reiciendis repudiandae vero, ratione cum iure vitae?
@@ -40,10 +36,10 @@
                 </div>
 
                 <div class="galery">
-                    <a href="./assets/image/home/galery_1.png" class="fresco"  data-fresco-group="galery_1" ><img class="full-size" src="./assets/image/home/galery_1.png" alt=""></a>
-                    <a href="./assets/image/home/galery_2.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_2.png" alt=""></a>
-                    <a href="./assets/image/home/galery_3.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_3.png" alt=""></a>
-                    <a href="./assets/image/home/galery_4.png" class="fresco"  data-fresco-group="galery_1" ><img class=small-size src="./assets/image/home/galery_4.png" alt=""></a>
+                    <a href="./assets/image/home/galery_1.png" ><img class="full-size" src="./assets/image/home/galery_1.png" alt=""></a>
+                    <a href="./assets/image/home/galery_2.png" ><img class=small-size src="./assets/image/home/galery_2.png" alt=""></a>
+                    <a href="./assets/image/home/galery_3.png" ><img class=small-size src="./assets/image/home/galery_3.png" alt=""></a>
+                    <a href="./assets/image/home/galery_4.png" ><img class=small-size src="./assets/image/home/galery_4.png" alt=""></a>
                 </div>
             </div>
 

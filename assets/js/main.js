@@ -63,10 +63,8 @@ $(document).ready(() => {
          selectedTour: homeForm.find('#selectedTour').val(),
          question: homeForm.find('#question').val()
       }
-      console.log(body)
       if(body.fullName && body.phoneNumber && body.email && body.selectedTour && body.question) {
         const req = post('/contact',body);
-        console.log(req);
         alert("contact form sending")
       }
       else {
@@ -90,8 +88,7 @@ $(document).ready(() => {
    getAllToursInConfigurato();
    async function getAllToursInConfigurato () {
       const tours =  await get('/winery-tours');
-      const selected_tours = localStorage.getItem('wine_tours') || []
-      console.log(tours)
+      let selected_tours = JSON.parse(localStorage.getItem('wine_tours')) || []
       for(tour of tours) {
          const template = $('.steper-tours .template').clone();      
          const item = template.removeClass('template');
@@ -118,17 +115,35 @@ $(document).ready(() => {
       $("#step-tours-slider").owlCarousel(
          {
              items: 4,
-             margin: 0,
+            //  margin: 20,
              dots: true,
              autoplay: true,
             //  loop: true,
-             lazyLoad: true
+             lazyLoad: true,
+             center: true,
+             responsive : {
+               0: {
+                  items: 1
+               },
+               1000: {
+                  items: 4
+               }
+            }
          }
      );
 
        //hide template item in slider
-       $('#step-tours-slider .owl-item')[0].remove()
-
+      $('#step-tours-slider .owl-item').eq(0).remove()
+      addConrtrols($("#step-tours-slider"))
+      $('.first-step-next').click(function() {
+       selected_tours = JSON.parse(localStorage.getItem('wine_tours')) || []
+         if(selected_tours.length) {
+            $("#steper").steps('next');
+         }
+         else {
+            alert("Тур не выбран")
+         }
+      })
    }
 
 
@@ -190,7 +205,6 @@ $(document).ready(() => {
                else {
                   sliderRefresh($('.fourth-step'), cars)
                }
-               sliderClear($('#step-car-slider'));
             })
          });
       }
@@ -201,24 +215,35 @@ $(document).ready(() => {
              margin: 0,
              dots: true,
              autoplay: true,
-            //  loop: true,
-             lazyLoad: true
+             center: true,
+             responsive : {
+               0: {
+                  items: 1
+               },
+               1000: {
+                  items: 4
+               }
+            }
          }
      );
 
        //hide template item in slider
-       console.log($('.owl-item'))
-      $('#step-cars-slider .owl-item')[0].remove()
+      //  if(cars)
+      $('#step-cars-slider .owl-item').eq(0).remove()
+      addConrtrols($("#step-cars-slider"))
+
+   }
+   function addConrtrols(owl) {
+      $('.controls .next').click(() => owl.trigger('next.owl.carousel'));
+      $('.controls .prev').click(() => owl.trigger('prev.owl.carousel'));
    }
 
-
    function sliderRefresh(slider, data) {
-      alert('slider refresh')
       let items = '';
       $(slider).find('.item').each((index, e) => $(slider).trigger('remove.owl.carousel', index));
       let a = 0;
       for(car of data) {
-         const template = $('.fourth-step .template').clone().eq(0);
+         const template = $('.fourth-step').parent().find('.template').clone().eq(0);
 
          let item = template.removeClass('template');
          if(car.photos.length)
@@ -239,25 +264,15 @@ $(document).ready(() => {
             getCarAndTour();
          })
          $(slider).trigger('add.owl.carousel', [item, a++]);
-
       }
-   }
-   function sliderClear($owl) {
-      // $owl.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded');
-      // $owl.find('.owl-stage-outer').children().unwrap();
-      // $owl.find('.owl-stage-outer').remove();
-      // $owl.find('.owl-nav').remove();
-      // $owl.find('.owl-dots').remove();
-      // $owl.removeClass('owl-loaded');
-      // $owl.removeClass('owl-drag');
+     addConrtrols($("#step-car-slider"))
    }
 
    function drawCars(cars) {
-      alert('slider init')
 
       $('.fourth-step .item').not('.template').remove();
       for(car of cars) {
-         const template = $('.fourth-step .template').clone();
+         const template = $('.fourth-step').parent().find('.template').clone();
          const item = template.removeClass('template');
          if(car.photos.length)
             item.find('.galery img').attr('src', host + car.photos[0]['configurator-card']);
@@ -285,13 +300,12 @@ $(document).ready(() => {
              margin: 0,
              dots: true,
              autoplay: true,
-             loop: true,
-             lazyLoad: true
+             lazyLoad: true,
          }
      );
+     addConrtrols($("#step-car-slider"))
 
        //hide template item in slider
-       console.log($('.owl-item'))
       // $('#step-car-slider .owl-item')[0].css({'display':'none'})
    }
 
@@ -327,7 +341,6 @@ $(document).ready(() => {
     $('.scond-step-form #month').change(function () {
       const month = $(this).val();
       const days = daysInMonth(month);
-      console.log(days);
       for(i=1; i<days; i++) {
          let option = `<option value='${getZerro(i)}'>${getZerro(i)}</option>`;
          $('.scond-step-form #date').append(option);
@@ -386,19 +399,21 @@ $(document).ready(() => {
    })
 
 
-  function getCarAndTour() {
-      findTour();
-      wishlistMapDraw();
-      findCar();
+   async function  getCarAndTour() {
+      fullPrice = 0;
+     await findTour();
+     await wishlistMapDraw();
+     await findCar();
    }
 
    ///step 5 
    async function findTour () {
-      console.log('findTour')
+      $('.steper-selected .itour').remove();
       const tours =  await get('/winery-tours');
       wine_tours = JSON.parse(localStorage.getItem('wine_tours'));
       const tour = tours.find(t => t.id == wine_tours[0]);
-      const template = $('.steper-selected .template').clone();      
+      const template = $('.steper-selected .template').clone();
+      template.addClass('itour');   
       const item = template.removeClass('template');
       item.find('.head').html(tour.name);
       item.find('.desc').html(tour.description);
@@ -416,7 +431,7 @@ $(document).ready(() => {
    }
 
    async function wishlistMapDraw() {
-      console.log('wishlistMapDraw')
+      $('.steper-selected .map').remove();
       const address = localStorage.getItem('address');
       const price = await get(`/distance?target=${address}`);
       const map = localStorage.getItem('map');
@@ -424,7 +439,8 @@ $(document).ready(() => {
       const time = localStorage.getItem('time');
       const wishes = localStorage.getItem('wishes');
 
-      const template = $('.steper-selected .template').clone();      
+      const template = $('.steper-selected .template').clone();
+      template.addClass('map') 
       const item = template.removeClass('template');
       item.find('.head').html(address);
       item.find('.desc').html(
@@ -450,27 +466,26 @@ $(document).ready(() => {
 
    
    async function findCar () {
-      console.log('findCar')
       const cars =  await get('/cars');
-
+      $('.steper-selected .car').remove();
       car_id = JSON.parse(localStorage.getItem('car_id'));
       const car = cars.data.find(t => t.id == car_id);
-      const template = $('.steper-selected .template').clone();      
+      const template = $('.steper-selected .template').clone();
+      template.addClass('car');  
       const item = template.removeClass('template');
       item.find('.head').html(car.name);
       item.find('.desc').html(car.description);
       item.find('.price').html(`${car.price}$`);
+      if(car.photos.length>0)
       item.find('.wrapper img').attr('src',host+car.photos[0]['configurator-card']);
 
       item.attr('data-id', car.id);
       $('.steper-selected .form').before(item);
 
       item.find('.btn.change').click(function()  {
-         $("#steper").steps('setStep', 3)
+         $("#steper").steps('setStep', 2)
       });
-
       setTotalPrice(car.price)
-      console.log(item)
    }
 
    function getZerro(number) {
@@ -492,8 +507,13 @@ $(document).ready(() => {
          address_price: '123'
       }
       post('/place-an-order', body).then(res => {
-         console.log(res)
-      })
+         if(res) $('.popup').css('display', 'flex');
+      }).catch(err=> alert(err))
+   })
+
+   //responsive 
+   $('header .mob-menu-drop-btn').click(() => {
+      $('header .wrapper').toggleClass('toggle');
    })
 
 

@@ -4,7 +4,6 @@
 <link rel="stylesheet" type="text/css" href="./assets/css/header.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/footer.css">
 <link rel="stylesheet" href="./assets/css/main.css">
-<link rel="stylesheet" href="./assets/slick.css">
 <link rel="stylesheet" href="./assets/js/owl/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="./assets/js/owl/assets/owl.theme.default.min.css">
 <link rel="stylesheet" href="./assets/css/slider.css">

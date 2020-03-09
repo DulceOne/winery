@@ -41,3 +41,22 @@ footer {
 		}
 	}
 }
+
+@media screen and (max-width: 1170px) {
+	footer {
+		height: unset;
+		padding: 30px;
+		box-sizing: border-box;
+		.wrapper {
+			width: 100%;
+			padding: unset;
+			.contacts {
+				width: 100%;
+				border: unset;
+			}
+			.menu {
+				display: none;
+			}
+		}
+	}
+}

@@ -11,6 +11,16 @@
 </head>
 <body>
 	<section class="full-wrapper">
+		<div class="popup">
+			<div class="wrapper">
+				<div class="title">Congratulations!</div>
+				<div class="info">
+				Within 15 minutes, the<br> operator will contact you.
+				</div>
+				<div class="thx">Thank you for choosing us.</div>
+				<a class="btn" href="index.php">home</a>
+			</div>
+		</div>
 		<? include './shared/header.php'?>
 		<div class="configurator">
 			<div id="steper">
@@ -22,8 +32,8 @@
 							<div class="ui-line orange"></div>
 						</div>
 						<div class="controls">
-							<img src="./assets/image/home/arrow_left.png" alt="">
-							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+							<img class="prev" src="./assets/image/home/arrow_left.png" alt="">
+							<img class="next" src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
 						</div>
 						<div class="current-page">Step 1 with 5 </div>
 					</div>
@@ -52,8 +62,10 @@
 								<div class="btn select">select</div>
 							</div>
 						</div>
-
 					</div>
+
+					<div class="btn first-step-next">Next</div>
+
 				</section>
 				<h3></h3>
 				<section id="second-step">
@@ -126,8 +138,8 @@
 							<div class="ui-line orange"></div>
 						</div>
 						<div class="controls">
-							<img src="./assets/image/home/arrow_left.png" alt="">
-							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+							<img class="prev" src="./assets/image/home/arrow_left.png" alt="">
+							<img class="next" src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
 						</div>
 						<div class="current-page">Step 3 with 5 </div>
 					</div>
@@ -170,14 +182,13 @@
 							<div class="ui-line orange"></div>
 						</div>
 						<div class="controls">
-							<img src="./assets/image/home/arrow_left.png" alt="">
-							<img src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
+							<img class="prev" src="./assets/image/home/arrow_left.png" alt="">
+							<img class="next" src="./assets/image/home/arrow_left.png" style="transform: rotate(180deg);">
 						</div>
 						<div class="current-page">Step 4 with 5 </div>
 					</div>
-					<div class="fourth-step owl-carousel" id="step-car-slider">
-					
-						<div class="item template">
+
+					<div class="item template">
 							<div class="galery">
 								<img src="./assets/image/configurator/car.png" alt="">
 							</div>
@@ -195,6 +206,7 @@
 								</div>
 							</div>
 						</div>
+					<div class="fourth-step owl-carousel" id="step-car-slider">
 						
 					</div>
 				</section>

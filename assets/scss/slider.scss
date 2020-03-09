@@ -56,3 +56,14 @@
 	}
 
 }
+
+@media screen and (max-width: 1170px) {
+	.slider {
+		.btn {
+			width: unset;
+		}	
+		.owl-dots {
+			display: none;
+		}
+	}
+}

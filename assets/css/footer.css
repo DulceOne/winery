@@ -45,3 +45,26 @@ footer .wrapper .menu nav a {
   text-transform: uppercase;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1170px) {
+  /* line 46, ../scss/footer.scss */
+  footer {
+    height: unset;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  /* line 50, ../scss/footer.scss */
+  footer .wrapper {
+    width: 100%;
+    padding: unset;
+  }
+  /* line 53, ../scss/footer.scss */
+  footer .wrapper .contacts {
+    width: 100%;
+    border: unset;
+  }
+  /* line 57, ../scss/footer.scss */
+  footer .wrapper .menu {
+    display: none;
+  }
+}

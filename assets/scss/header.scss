@@ -5,12 +5,18 @@ header {
   font-family: Roboto;
   font-style: normal;
   box-sizing: border-box;
+  .mob-menu-drop-btn {
+    display: none;
+  }
   .wrapper {
     width: 1170px;
     margin: auto;
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
+    &.toggle {
+      display: block;
+    }
     .img_wrap {
       .logo {
         width: 140px;
@@ -41,4 +47,35 @@ header {
       }
     }
   }
+}
+
+@media screen and (max-width: 1170px) {
+  header {
+    position: relative;
+    height: 50px;
+    padding: unset;
+    padding-top: 10px;
+    .mob-menu-drop-btn {
+      display: block;
+      margin-left: 10px;
+    }
+    .wrapper {
+      position: absolute;
+      width: 100%;
+      display: none;
+      z-index: 99999999999999;
+      background-color: white;
+      padding: 10px;
+      .img_wrap {
+        display: none;
+      }
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      width: 100%!important;
+    }
+  }
+
+
 }

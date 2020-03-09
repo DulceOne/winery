@@ -56,3 +56,14 @@
   bottom: 115px;
   z-index: 1;
 }
+
+@media screen and (max-width: 1170px) {
+  /* line 62, ../scss/slider.scss */
+  .slider .btn {
+    width: unset;
+  }
+  /* line 65, ../scss/slider.scss */
+  .slider .owl-dots {
+    display: none;
+  }
+}
