@@ -13,7 +13,7 @@
 
 <div class="about">
     <div class="header">
-        about ul 
+        about us
         <div class="ui-line orange"></div>
     </div>
     <div class="galery">

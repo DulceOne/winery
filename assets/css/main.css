@@ -983,124 +983,164 @@ main .contacts .wrapper .info .soc {
     padding: 10px !important;
   }
 
-  /* line 899, ../scss/main.scss */
+  /* line 898, ../scss/main.scss */
+  .about {
+    width: 100% !important;
+  }
+  /* line 900, ../scss/main.scss */
+  .about .header {
+    margin-left: 10px;
+  }
+  /* line 903, ../scss/main.scss */
+  .about .galery {
+    padding: 10px;
+  }
+  /* line 905, ../scss/main.scss */
+  .about .galery img {
+    width: 100% !important;
+    margin: unset !important;
+  }
+  /* line 910, ../scss/main.scss */
+  .about .galery-2 {
+    padding-top: unset !important;
+    margin-left: unset !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  /* line 915, ../scss/main.scss */
+  .about .galery-2 img {
+    margin-left: unset !important;
+    width: 100% !important;
+  }
+  /* line 920, ../scss/main.scss */
+  .about .wrapper {
+    flex-direction: column;
+  }
+  /* line 922, ../scss/main.scss */
+  .about .wrapper .info {
+    width: 100% !important;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* line 931, ../scss/main.scss */
   .full-wrapper .configurator {
     height: 100% !important;
   }
-  /* line 904, ../scss/main.scss */
+  /* line 936, ../scss/main.scss */
   .full-wrapper #steper .header .title {
     font-size: 3vw !important;
   }
-  /* line 908, ../scss/main.scss */
+  /* line 940, ../scss/main.scss */
   .full-wrapper #steper .steper-tours, .full-wrapper #steper .steper-cars {
     padding-left: unset !important;
   }
-  /* line 911, ../scss/main.scss */
+  /* line 943, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item, .full-wrapper #steper .steper-cars .owl-item .item {
     width: 100%;
   }
-  /* line 914, ../scss/main.scss */
+  /* line 946, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper img, .full-wrapper #steper .steper-cars .owl-item .item .wrapper img {
     width: 100%;
   }
-  /* line 918, ../scss/main.scss */
+  /* line 950, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .head, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .head {
     font-size: 3.5vw;
   }
-  /* line 921, ../scss/main.scss */
+  /* line 953, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .desc, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .desc {
     font-size: 3vw;
   }
-  /* line 932, ../scss/main.scss */
+  /* line 964, ../scss/main.scss */
   .full-wrapper #steper .second-step .map {
     width: 90% !important;
     box-sizing: border-box;
     margin: auto !important;
   }
-  /* line 937, ../scss/main.scss */
+  /* line 969, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form {
     width: 90% !important;
     margin: auto;
   }
-  /* line 941, ../scss/main.scss */
+  /* line 973, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item {
     width: 100% !important;
   }
-  /* line 943, ../scss/main.scss */
+  /* line 975, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item .title {
     font-size: 4vw !important;
   }
-  /* line 946, ../scss/main.scss */
+  /* line 978, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item select {
     font-size: 3vw !important;
   }
-  /* line 952, ../scss/main.scss */
+  /* line 984, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .btn {
     bottom: -10vh !important;
   }
-  /* line 960, ../scss/main.scss */
+  /* line 992, ../scss/main.scss */
   .full-wrapper .steper-selected {
     padding-left: unset !important;
     flex-direction: column;
     height: unset !important;
     padding-bottom: 4vh;
   }
-  /* line 965, ../scss/main.scss */
+  /* line 997, ../scss/main.scss */
   .full-wrapper .steper-selected .item {
     width: 90% !important;
     margin: auto !important;
   }
-  /* line 969, ../scss/main.scss */
+  /* line 1001, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper img {
     width: 100% !important;
   }
-  /* line 972, ../scss/main.scss */
+  /* line 1004, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info {
     min-height: 20vh;
   }
-  /* line 974, ../scss/main.scss */
+  /* line 1006, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info .head {
     font-size: 4vw !important;
   }
-  /* line 977, ../scss/main.scss */
+  /* line 1009, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info .desc {
     font-size: 3vw !important;
     line-height: unset !important;
   }
-  /* line 983, ../scss/main.scss */
+  /* line 1015, ../scss/main.scss */
   .full-wrapper .steper-selected .item:nth-child(n+2) {
     margin-top: 5vw !important;
   }
-  /* line 990, ../scss/main.scss */
+  /* line 1022, ../scss/main.scss */
   .full-wrapper .fourth-step .item {
     display: flex;
     flex-direction: column;
   }
-  /* line 993, ../scss/main.scss */
+  /* line 1025, ../scss/main.scss */
   .full-wrapper .fourth-step .item .galery {
     width: 90% !important;
     margin: auto;
     padding: unset !important;
   }
-  /* line 998, ../scss/main.scss */
+  /* line 1030, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info {
     width: 100% !important;
     min-height: 20vh;
   }
-  /* line 1001, ../scss/main.scss */
+  /* line 1033, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .title {
     font-size: 4vw !important;
   }
-  /* line 1004, ../scss/main.scss */
+  /* line 1036, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .desc {
     font-size: 3vw !important;
   }
-  /* line 1008, ../scss/main.scss */
+  /* line 1040, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .btns {
     width: 90% !important;
     margin: auto;
   }
-  /* line 1015, ../scss/main.scss */
+  /* line 1047, ../scss/main.scss */
   .full-wrapper .first-step-next {
     width: 100% !important;
   }
