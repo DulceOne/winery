@@ -967,44 +967,41 @@ main .contacts .wrapper .info .soc {
     width: 100% !important;
   }
   /* line 881, ../scss/main.scss */
+  .fleet-view .wrapper .item:nth-child(n+2) {
+    margin-top: 5vh;
+  }
+  /* line 884, ../scss/main.scss */
   .fleet-view .wrapper .item .galery {
     width: 100% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  /* line 886, ../scss/main.scss */
+  /* line 889, ../scss/main.scss */
   .fleet-view .wrapper .item .galery .full-size {
     width: 100%;
   }
-  /* line 890, ../scss/main.scss */
+  /* line 893, ../scss/main.scss */
   .fleet-view .wrapper .item .info {
     width: 100% !important;
     padding: 10px !important;
   }
 
-  /* line 898, ../scss/main.scss */
+  /* line 901, ../scss/main.scss */
   .about {
     width: 100% !important;
-  }
-  /* line 900, ../scss/main.scss */
-  .about .header {
-    margin-left: 10px;
-  }
-  /* line 903, ../scss/main.scss */
-  .about .galery {
     padding: 10px;
+    box-sizing: border-box;
   }
-  /* line 905, ../scss/main.scss */
+  /* line 906, ../scss/main.scss */
   .about .galery img {
     width: 100% !important;
     margin: unset !important;
   }
-  /* line 910, ../scss/main.scss */
+  /* line 911, ../scss/main.scss */
   .about .galery-2 {
     padding-top: unset !important;
     margin-left: unset !important;
-    padding: 10px;
     box-sizing: border-box;
   }
   /* line 915, ../scss/main.scss */
@@ -1019,128 +1016,127 @@ main .contacts .wrapper .info .soc {
   /* line 922, ../scss/main.scss */
   .about .wrapper .info {
     width: 100% !important;
-    padding: 10px;
     box-sizing: border-box;
   }
 
-  /* line 931, ../scss/main.scss */
+  /* line 930, ../scss/main.scss */
   .full-wrapper .configurator {
     height: 100% !important;
   }
-  /* line 936, ../scss/main.scss */
+  /* line 935, ../scss/main.scss */
   .full-wrapper #steper .header .title {
     font-size: 3vw !important;
   }
-  /* line 940, ../scss/main.scss */
+  /* line 939, ../scss/main.scss */
   .full-wrapper #steper .steper-tours, .full-wrapper #steper .steper-cars {
     padding-left: unset !important;
   }
-  /* line 943, ../scss/main.scss */
+  /* line 942, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item, .full-wrapper #steper .steper-cars .owl-item .item {
     width: 100%;
   }
-  /* line 946, ../scss/main.scss */
+  /* line 945, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper img, .full-wrapper #steper .steper-cars .owl-item .item .wrapper img {
     width: 100%;
   }
-  /* line 950, ../scss/main.scss */
+  /* line 949, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .head, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .head {
     font-size: 3.5vw;
   }
-  /* line 953, ../scss/main.scss */
+  /* line 952, ../scss/main.scss */
   .full-wrapper #steper .steper-tours .owl-item .item .wrapper .info .desc, .full-wrapper #steper .steper-cars .owl-item .item .wrapper .info .desc {
     font-size: 3vw;
   }
-  /* line 964, ../scss/main.scss */
+  /* line 963, ../scss/main.scss */
   .full-wrapper #steper .second-step .map {
     width: 90% !important;
     box-sizing: border-box;
     margin: auto !important;
   }
-  /* line 969, ../scss/main.scss */
+  /* line 968, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form {
     width: 90% !important;
     margin: auto;
   }
-  /* line 973, ../scss/main.scss */
+  /* line 972, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item {
     width: 100% !important;
   }
-  /* line 975, ../scss/main.scss */
+  /* line 974, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item .title {
     font-size: 4vw !important;
   }
-  /* line 978, ../scss/main.scss */
+  /* line 977, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .date-block .item select {
     font-size: 3vw !important;
   }
-  /* line 984, ../scss/main.scss */
+  /* line 983, ../scss/main.scss */
   .full-wrapper #steper .second-step .scond-step-form .btn {
     bottom: -10vh !important;
   }
-  /* line 992, ../scss/main.scss */
+  /* line 991, ../scss/main.scss */
   .full-wrapper .steper-selected {
     padding-left: unset !important;
     flex-direction: column;
     height: unset !important;
     padding-bottom: 4vh;
   }
-  /* line 997, ../scss/main.scss */
+  /* line 996, ../scss/main.scss */
   .full-wrapper .steper-selected .item {
     width: 90% !important;
     margin: auto !important;
   }
-  /* line 1001, ../scss/main.scss */
+  /* line 1000, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper img {
     width: 100% !important;
   }
-  /* line 1004, ../scss/main.scss */
+  /* line 1003, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info {
     min-height: 20vh;
   }
-  /* line 1006, ../scss/main.scss */
+  /* line 1005, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info .head {
     font-size: 4vw !important;
   }
-  /* line 1009, ../scss/main.scss */
+  /* line 1008, ../scss/main.scss */
   .full-wrapper .steper-selected .item .wrapper .info .desc {
     font-size: 3vw !important;
     line-height: unset !important;
   }
-  /* line 1015, ../scss/main.scss */
+  /* line 1014, ../scss/main.scss */
   .full-wrapper .steper-selected .item:nth-child(n+2) {
     margin-top: 5vw !important;
   }
-  /* line 1022, ../scss/main.scss */
+  /* line 1021, ../scss/main.scss */
   .full-wrapper .fourth-step .item {
     display: flex;
     flex-direction: column;
   }
-  /* line 1025, ../scss/main.scss */
+  /* line 1024, ../scss/main.scss */
   .full-wrapper .fourth-step .item .galery {
     width: 90% !important;
     margin: auto;
     padding: unset !important;
   }
-  /* line 1030, ../scss/main.scss */
+  /* line 1029, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info {
     width: 100% !important;
     min-height: 20vh;
   }
-  /* line 1033, ../scss/main.scss */
+  /* line 1032, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .title {
     font-size: 4vw !important;
   }
-  /* line 1036, ../scss/main.scss */
+  /* line 1035, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .desc {
     font-size: 3vw !important;
   }
-  /* line 1040, ../scss/main.scss */
+  /* line 1039, ../scss/main.scss */
   .full-wrapper .fourth-step .item .info .btns {
     width: 90% !important;
     margin: auto;
   }
-  /* line 1047, ../scss/main.scss */
+  /* line 1046, ../scss/main.scss */
   .full-wrapper .first-step-next {
     width: 100% !important;
   }

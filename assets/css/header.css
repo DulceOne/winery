@@ -75,12 +75,13 @@ header .wrapper nav a:hover, header .wrapper nav a.active {
     z-index: 99999999999999;
     background-color: white;
     padding: 10px;
+    box-sizing: border-box;
   }
-  /* line 69, ../scss/header.scss */
+  /* line 70, ../scss/header.scss */
   header .wrapper .img_wrap {
     display: none;
   }
-  /* line 73, ../scss/header.scss */
+  /* line 74, ../scss/header.scss */
   header nav {
     display: flex;
     flex-direction: column;
